@@ -14652,8 +14652,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
-<span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
-
 <span class="c1"># パラメータ</span>
 <span class="n">N</span> <span class="o">=</span> <span class="mi">30</span>  <span class="c1"># 学生の人数</span>
 <span class="n">mu</span><span class="p">,</span> <span class="n">sigma</span> <span class="o">=</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">18</span> <span class="c1"># 学力の平均と標準偏差</span>
@@ -14813,6 +14811,27 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB">&#12452;&#12531;&#12473;&#12488;&#12540;&#12523;<a class="anchor-link" href="#%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB">&#182;</a></h2><p>pip でインストール可能です。</p>
+<blockquote>
+<p>pip install altair altair_saver</p>
+</blockquote>
+<p>conda でもインストールできます。</p>
+<blockquote>
+<p>conda install -c conda-forge altair</p>
+<p>conda install altair_saver</p>
+</blockquote>
+<p><a href="https://altair-viz.github.io/getting_started/installation.html">公式ドキュメント</a>を参考にしてください。</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="%E3%82%B0%E3%83%A9%E3%83%95%E3%81%AE%E6%A7%8B%E6%88%90">&#12464;&#12521;&#12501;&#12398;&#27083;&#25104;<a class="anchor-link" href="#%E3%82%B0%E3%83%A9%E3%83%95%E3%81%AE%E6%A7%8B%E6%88%90">&#182;</a></h2><p>まずは altair で作成可能なグラフの構成を説明します。Altair によるグラフ作成は <a href="https://altair-viz.github.io/user_guide/data.html">chart object</a> というクラスを作成するところから始まります。chart object には以下の 6 種類があります。</p>
 <ul>
 <li><code>alt.Chart()</code><ul>
@@ -14937,13 +14956,13 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-03c3646c1dc146448278fa46baa109f5"></div>
+<div id="altair-viz-e91dd8e097b2499b8e701f1682dfc2aa"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-03c3646c1dc146448278fa46baa109f5") {
-      outputDiv = document.getElementById("altair-viz-03c3646c1dc146448278fa46baa109f5");
+    if (outputDiv.id !== "altair-viz-e91dd8e097b2499b8e701f1682dfc2aa") {
+      outputDiv = document.getElementById("altair-viz-e91dd8e097b2499b8e701f1682dfc2aa");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -15006,6 +15025,48 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="%E5%9B%B3%E3%81%AE%E4%BF%9D%E5%AD%98">&#22259;&#12398;&#20445;&#23384;<a class="anchor-link" href="#%E5%9B%B3%E3%81%AE%E4%BF%9D%E5%AD%98">&#182;</a></h2><p><code>.save()</code>を使えば <a href="https://altair-viz.github.io/user_guide/saving_charts.html#html-format">html</a> または <a href="https://altair-viz.github.io/user_guide/saving_charts.html#json-format">json</a> で保存可能です。</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">altair_chart</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">'saved_chart.html'</span><span class="p">)</span>
+<span class="n">altair_chart</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">'saved_chart.json'</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>png、svg、形式の保存はグラフ右上の三点印<code>embed_options</code>から可能ですが解像度は調節できません。 <code>altair_saver</code> を使用すれば png、svg、そして pdf でも高解像度で<a href="https://altair-viz.github.io/user_guide/saving_charts.html#png-svg-and-pdf-format">保存可能</a>です。
+ただ Jupyter 上でこれを実行するためには更なるセットアップが必要です。詳しくは<a href="https://yoshidabenjiro.hatenablog.com/entry/2020/08/15/191416">こちら</a>を参考にしてください。</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Option-%E3%81%AB%E3%82%88%E3%82%8B%E8%BB%B8%E3%80%81%E5%87%A1%E4%BE%8B%E3%80%81%E3%83%98%E3%83%83%E3%83%80%E3%83%BC%E3%81%AE%E8%A8%AD%E5%AE%9A">Option &#12395;&#12424;&#12427;&#36600;&#12289;&#20961;&#20363;&#12289;&#12504;&#12483;&#12480;&#12540;&#12398;&#35373;&#23450;<a class="anchor-link" href="#Option-%E3%81%AB%E3%82%88%E3%82%8B%E8%BB%B8%E3%80%81%E5%87%A1%E4%BE%8B%E3%80%81%E3%83%98%E3%83%83%E3%83%80%E3%83%BC%E3%81%AE%E8%A8%AD%E5%AE%9A">&#182;</a></h2><p>エンコーディングされた各チャネルには<a href="https://altair-viz.github.io/user_guide/encoding.html#encoding-channel-options">option</a>を引数としてとることができます。option は channel ごとに仕様が異なっていたり、一部の channel でしか使えなかったりするものが多いです。よく使うものだけを覚えておくとよいでしょう。
 以下の例では、散布図の軸ラベルや判例などをカスタマイズしています。</p>
 
@@ -15017,7 +15078,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">altair_chart_with_options</span> <span class="o">=</span> <span class="p">(</span>
@@ -15092,19 +15153,19 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-11011df9ea224e69aebbc2c4ee5a6250"></div>
+<div id="altair-viz-59a7199e28e44b118de2a8bbe1a41e68"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-11011df9ea224e69aebbc2c4ee5a6250") {
-      outputDiv = document.getElementById("altair-viz-11011df9ea224e69aebbc2c4ee5a6250");
+    if (outputDiv.id !== "altair-viz-59a7199e28e44b118de2a8bbe1a41e68") {
+      outputDiv = document.getElementById("altair-viz-59a7199e28e44b118de2a8bbe1a41e68");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -15189,7 +15250,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">altair_chart_with_options</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span>
@@ -15210,19 +15271,19 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-3d066a21d63e4c57a28463d3d90cb6da"></div>
+<div id="altair-viz-0af2958639754e8891192ec5c250299d"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-3d066a21d63e4c57a28463d3d90cb6da") {
-      outputDiv = document.getElementById("altair-viz-3d066a21d63e4c57a28463d3d90cb6da");
+    if (outputDiv.id !== "altair-viz-0af2958639754e8891192ec5c250299d") {
+      outputDiv = document.getElementById("altair-viz-0af2958639754e8891192ec5c250299d");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -15295,7 +15356,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">font_config</span><span class="p">():</span>
@@ -15364,7 +15425,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 
 
 
@@ -15404,7 +15465,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">altair_chart_with_data_type</span> <span class="o">=</span> <span class="p">(</span>
@@ -15434,19 +15495,19 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-cc2837e7730f4083be16d307cfa91552"></div>
+<div id="altair-viz-1e5f1779ad2242e2acbf409bd2cb028c"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-cc2837e7730f4083be16d307cfa91552") {
-      outputDiv = document.getElementById("altair-viz-cc2837e7730f4083be16d307cfa91552");
+    if (outputDiv.id !== "altair-viz-1e5f1779ad2242e2acbf409bd2cb028c") {
+      outputDiv = document.getElementById("altair-viz-1e5f1779ad2242e2acbf409bd2cb028c");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -15542,7 +15603,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">long_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">id_vars</span><span class="o">=</span><span class="p">[</span><span class="s2">"学生番号"</span><span class="p">,</span> <span class="s2">"性別"</span><span class="p">,</span> <span class="s2">"コース"</span><span class="p">],</span> <span class="n">var_name</span><span class="o">=</span><span class="s2">"科目"</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s2">"得点"</span><span class="p">)</span>
@@ -15562,7 +15623,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
 
 
 
@@ -15710,7 +15771,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">boxplot</span> <span class="o">=</span> <span class="p">(</span>
@@ -15748,19 +15809,19 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-18aa999fe3754fdb8b8794ded0908585"></div>
+<div id="altair-viz-6d13c4dd26664e8382f88677b9ca1163"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-18aa999fe3754fdb8b8794ded0908585") {
-      outputDiv = document.getElementById("altair-viz-18aa999fe3754fdb8b8794ded0908585");
+    if (outputDiv.id !== "altair-viz-6d13c4dd26664e8382f88677b9ca1163") {
+      outputDiv = document.getElementById("altair-viz-6d13c4dd26664e8382f88677b9ca1163");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -15846,7 +15907,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bar_chart</span> <span class="o">=</span> <span class="p">(</span>
@@ -15892,19 +15953,19 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-0333a1886dc54929b5681d2f6c88f0cf"></div>
+<div id="altair-viz-14470668d56d4a60b56af05583795732"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-0333a1886dc54929b5681d2f6c88f0cf") {
-      outputDiv = document.getElementById("altair-viz-0333a1886dc54929b5681d2f6c88f0cf");
+    if (outputDiv.id !== "altair-viz-14470668d56d4a60b56af05583795732") {
+      outputDiv = document.getElementById("altair-viz-14470668d56d4a60b56af05583795732");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -15977,7 +16038,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bar_chart</span> <span class="o">=</span> <span class="p">(</span>
@@ -16044,19 +16105,19 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-5ae0948b4b4f4faab7a26c559f6cfd0f"></div>
+<div id="altair-viz-903eb47684ef49e78400d23835d64995"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-5ae0948b4b4f4faab7a26c559f6cfd0f") {
-      outputDiv = document.getElementById("altair-viz-5ae0948b4b4f4faab7a26c559f6cfd0f");
+    if (outputDiv.id !== "altair-viz-903eb47684ef49e78400d23835d64995") {
+      outputDiv = document.getElementById("altair-viz-903eb47684ef49e78400d23835d64995");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -16129,7 +16190,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">stacked_bar_chart</span> <span class="o">=</span> <span class="p">(</span>
@@ -16178,19 +16239,19 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-6ea154d8ba484415b5e7ceef1b81a402"></div>
+<div id="altair-viz-59b296928758436e99f33ab88747f009"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-6ea154d8ba484415b5e7ceef1b81a402") {
-      outputDiv = document.getElementById("altair-viz-6ea154d8ba484415b5e7ceef1b81a402");
+    if (outputDiv.id !== "altair-viz-59b296928758436e99f33ab88747f009") {
+      outputDiv = document.getElementById("altair-viz-59b296928758436e99f33ab88747f009");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -16263,7 +16324,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">logscaled_stacked_bar_chart</span> <span class="o">=</span> <span class="p">(</span>
@@ -16304,19 +16365,19 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-d5db8fb0e2eb4ed190ad0901788e1825"></div>
+<div id="altair-viz-f2703fa30f7b4c948f6d59fef916e31c"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-d5db8fb0e2eb4ed190ad0901788e1825") {
-      outputDiv = document.getElementById("altair-viz-d5db8fb0e2eb4ed190ad0901788e1825");
+    if (outputDiv.id !== "altair-viz-f2703fa30f7b4c948f6d59fef916e31c") {
+      outputDiv = document.getElementById("altair-viz-f2703fa30f7b4c948f6d59fef916e31c");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -16389,7 +16450,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">stacked_comp_bar_chart</span> <span class="o">=</span> <span class="p">(</span>
@@ -16437,19 +16498,19 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-a99d00a561e440669798a07930de4d05"></div>
+<div id="altair-viz-2023484a114e45c0aa0fe54b2825693a"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-a99d00a561e440669798a07930de4d05") {
-      outputDiv = document.getElementById("altair-viz-a99d00a561e440669798a07930de4d05");
+    if (outputDiv.id !== "altair-viz-2023484a114e45c0aa0fe54b2825693a") {
+      outputDiv = document.getElementById("altair-viz-2023484a114e45c0aa0fe54b2825693a");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -16522,7 +16583,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">stacked_histgram</span> <span class="o">=</span> <span class="p">(</span>
@@ -16559,19 +16620,19 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-8b371bf82d7b4da9a21e3ed60f6b3810"></div>
+<div id="altair-viz-5048af8c12614f899833bf3cbf552f0f"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-8b371bf82d7b4da9a21e3ed60f6b3810") {
-      outputDiv = document.getElementById("altair-viz-8b371bf82d7b4da9a21e3ed60f6b3810");
+    if (outputDiv.id !== "altair-viz-5048af8c12614f899833bf3cbf552f0f") {
+      outputDiv = document.getElementById("altair-viz-5048af8c12614f899833bf3cbf552f0f");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -16644,7 +16705,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">stacked_histgram</span> <span class="o">=</span> <span class="p">(</span>
@@ -16681,19 +16742,19 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-813f8bba1f2b45c4b568452c634e6571"></div>
+<div id="altair-viz-0008fa27e419434d8bfa48bc42a54417"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-813f8bba1f2b45c4b568452c634e6571") {
-      outputDiv = document.getElementById("altair-viz-813f8bba1f2b45c4b568452c634e6571");
+    if (outputDiv.id !== "altair-viz-0008fa27e419434d8bfa48bc42a54417") {
+      outputDiv = document.getElementById("altair-viz-0008fa27e419434d8bfa48bc42a54417");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -16766,7 +16827,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">filtered_bar_chart</span> <span class="o">=</span> <span class="p">(</span>
@@ -16807,19 +16868,19 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-3c73ca1d7a06456c85dde9aa9411bb4b"></div>
+<div id="altair-viz-b87ad4e5a1a34b77b407456f9392d422"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-3c73ca1d7a06456c85dde9aa9411bb4b") {
-      outputDiv = document.getElementById("altair-viz-3c73ca1d7a06456c85dde9aa9411bb4b");
+    if (outputDiv.id !== "altair-viz-b87ad4e5a1a34b77b407456f9392d422") {
+      outputDiv = document.getElementById("altair-viz-b87ad4e5a1a34b77b407456f9392d422");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -16892,7 +16953,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">color_coded_bar_chart</span> <span class="o">=</span> <span class="p">(</span>
@@ -16938,19 +16999,19 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-f9bd8525a8c843a399bdc24fc26f3409"></div>
+<div id="altair-viz-0d063f9ad0b041bbbb5a39c1637a71e6"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-f9bd8525a8c843a399bdc24fc26f3409") {
-      outputDiv = document.getElementById("altair-viz-f9bd8525a8c843a399bdc24fc26f3409");
+    if (outputDiv.id !== "altair-viz-0d063f9ad0b041bbbb5a39c1637a71e6") {
+      outputDiv = document.getElementById("altair-viz-0d063f9ad0b041bbbb5a39c1637a71e6");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -17024,7 +17085,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">score_slider</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">binding_range</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">"score:"</span><span class="p">)</span>
@@ -17077,19 +17138,19 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-e0fb96958b1144c08b6292724c0da3aa"></div>
+<div id="altair-viz-7a4797c1390b416290624c028d2f8901"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-e0fb96958b1144c08b6292724c0da3aa") {
-      outputDiv = document.getElementById("altair-viz-e0fb96958b1144c08b6292724c0da3aa");
+    if (outputDiv.id !== "altair-viz-7a4797c1390b416290624c028d2f8901") {
+      outputDiv = document.getElementById("altair-viz-7a4797c1390b416290624c028d2f8901");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -17162,7 +17223,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">subject_dropdown</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">binding_select</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="n">sub</span><span class="p">)</span>
@@ -17214,19 +17275,19 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-49eca6d090144c86b67a1924d2930b4e"></div>
+<div id="altair-viz-4193d68f199b4e378be6f57d990d03f0"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-49eca6d090144c86b67a1924d2930b4e") {
-      outputDiv = document.getElementById("altair-viz-49eca6d090144c86b67a1924d2930b4e");
+    if (outputDiv.id !== "altair-viz-4193d68f199b4e378be6f57d990d03f0") {
+      outputDiv = document.getElementById("altair-viz-4193d68f199b4e378be6f57d990d03f0");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -17299,7 +17360,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">student_selection</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection_single</span><span class="p">(</span><span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="s2">"学生番号"</span><span class="p">],</span> <span class="n">init</span><span class="o">=</span><span class="p">{</span><span class="s2">"学生番号"</span><span class="p">:</span> <span class="n">id_lst</span><span class="p">[</span><span class="mi">0</span><span class="p">]})</span>
@@ -17348,19 +17409,19 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-1666c052bc6541a093d6e52195050f43"></div>
+<div id="altair-viz-d4344e5950b8498ea84fe6e3dc66e32d"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-1666c052bc6541a093d6e52195050f43") {
-      outputDiv = document.getElementById("altair-viz-1666c052bc6541a093d6e52195050f43");
+    if (outputDiv.id !== "altair-viz-d4344e5950b8498ea84fe6e3dc66e32d") {
+      outputDiv = document.getElementById("altair-viz-d4344e5950b8498ea84fe6e3dc66e32d");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -17433,7 +17494,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">student_brush_selection</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="s2">"interval"</span><span class="p">,</span> <span class="n">encodings</span><span class="o">=</span><span class="p">[</span><span class="s2">"x"</span><span class="p">])</span>
@@ -17500,19 +17561,19 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-5653e1f146204095be4a0e12e0e92d46"></div>
+<div id="altair-viz-0163f1b764184f0ebc48215aeea2f0fe"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-5653e1f146204095be4a0e12e0e92d46") {
-      outputDiv = document.getElementById("altair-viz-5653e1f146204095be4a0e12e0e92d46");
+    if (outputDiv.id !== "altair-viz-0163f1b764184f0ebc48215aeea2f0fe") {
+      outputDiv = document.getElementById("altair-viz-0163f1b764184f0ebc48215aeea2f0fe");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -17585,7 +17646,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">student_brush_selection</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="s2">"interval"</span><span class="p">,</span> <span class="n">encodings</span><span class="o">=</span><span class="p">[</span><span class="s2">"x"</span><span class="p">])</span>
@@ -17659,19 +17720,19 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-8639304d45d044adb29c744cf28ed59c"></div>
+<div id="altair-viz-3f43c7df1df549be8d80a4f62775b48b"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-8639304d45d044adb29c744cf28ed59c") {
-      outputDiv = document.getElementById("altair-viz-8639304d45d044adb29c744cf28ed59c");
+    if (outputDiv.id !== "altair-viz-3f43c7df1df549be8d80a4f62775b48b") {
+      outputDiv = document.getElementById("altair-viz-3f43c7df1df549be8d80a4f62775b48b");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -17744,7 +17805,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">subject_mouse_selection</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection</span><span class="p">(</span>
@@ -17817,19 +17878,19 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-e20cb2135e4f41f6b6e24cef1cc1a368"></div>
+<div id="altair-viz-ffdba9fe25a04430978aaab087087433"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-e20cb2135e4f41f6b6e24cef1cc1a368") {
-      outputDiv = document.getElementById("altair-viz-e20cb2135e4f41f6b6e24cef1cc1a368");
+    if (outputDiv.id !== "altair-viz-ffdba9fe25a04430978aaab087087433") {
+      outputDiv = document.getElementById("altair-viz-ffdba9fe25a04430978aaab087087433");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -17907,7 +17968,7 @@ For information on how to plot larger datasets in Altair, see the documentation<
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">altair</span> <span class="kn">import</span> <span class="n">limit_rows</span><span class="p">,</span> <span class="n">to_values</span>
@@ -17930,7 +17991,7 @@ For information on how to plot larger datasets in Altair, see the documentation<
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
 
 
 
@@ -17974,7 +18035,7 @@ For information on how to plot larger datasets in Altair, see the documentation<
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">stripplot</span> <span class="o">=</span> <span class="p">(</span>
@@ -18012,19 +18073,19 @@ For information on how to plot larger datasets in Altair, see the documentation<
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-f808fe76253940dba33fcda6081deef1"></div>
+<div id="altair-viz-c44302afc0734b9c88a293c0de87e9dc"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-f808fe76253940dba33fcda6081deef1") {
-      outputDiv = document.getElementById("altair-viz-f808fe76253940dba33fcda6081deef1");
+    if (outputDiv.id !== "altair-viz-c44302afc0734b9c88a293c0de87e9dc") {
+      outputDiv = document.getElementById("altair-viz-c44302afc0734b9c88a293c0de87e9dc");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -18097,7 +18158,7 @@ For information on how to plot larger datasets in Altair, see the documentation<
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x_range</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">]</span>
@@ -18147,19 +18208,19 @@ For information on how to plot larger datasets in Altair, see the documentation<
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-bcc9bed9c8be4a4692856fc973958624"></div>
+<div id="altair-viz-19902c5ab48b4c9f80717a417c4c095e"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-bcc9bed9c8be4a4692856fc973958624") {
-      outputDiv = document.getElementById("altair-viz-bcc9bed9c8be4a4692856fc973958624");
+    if (outputDiv.id !== "altair-viz-19902c5ab48b4c9f80717a417c4c095e") {
+      outputDiv = document.getElementById("altair-viz-19902c5ab48b4c9f80717a417c4c095e");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -18232,7 +18293,7 @@ For information on how to plot larger datasets in Altair, see the documentation<
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">step</span> <span class="o">=</span> <span class="mi">50</span>
@@ -18288,19 +18349,19 @@ For information on how to plot larger datasets in Altair, see the documentation<
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-40a55d57171340f8926f208ea7154826"></div>
+<div id="altair-viz-630527e4bc9641e5999de2b9f0cc69cb"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-40a55d57171340f8926f208ea7154826") {
-      outputDiv = document.getElementById("altair-viz-40a55d57171340f8926f208ea7154826");
+    if (outputDiv.id !== "altair-viz-630527e4bc9641e5999de2b9f0cc69cb") {
+      outputDiv = document.getElementById("altair-viz-630527e4bc9641e5999de2b9f0cc69cb");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -18356,6 +18417,18 @@ For information on how to plot larger datasets in Altair, see the documentation<
 
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>©︎ 2022 keisuke ohta</p>
+
+</div>
+</div>
+</div>
 </div>
 </body>
 
