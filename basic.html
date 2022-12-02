@@ -13302,13 +13302,9 @@ $( document ).ready(function(){
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#12452;&#12531;&#12473;&#12488;&#12540;&#12523;">&#12452;&#12531;&#12473;&#12488;&#12540;&#12523;<a class="anchor-link" href="#&#12452;&#12531;&#12473;&#12488;&#12540;&#12523;">&#182;</a></h2><p>pip でインストール可能です。</p>
-<blockquote><p>pip install altair altair_saver</p>
-</blockquote>
-<p>conda でもインストールできます。</p>
-<blockquote><p>conda install -c conda-forge altair</p>
-<p>conda install altair_saver</p>
-</blockquote>
-<p><a href="https://altair-viz.github.io/getting_started/installation.html">公式ドキュメント</a>を参考にしてください。</p>
+
+<pre><code>$ pip install altair altair_saver</code></pre>
+<p>conda でもインストールできます。詳細は<a href="https://altair-viz.github.io/getting_started/installation.html">公式ドキュメント</a>を参照してください。</p>
 
 </div>
 </div>
@@ -14043,7 +14039,7 @@ $( document ).ready(function(){
 </tr>
 </tbody>
 </table>
-<p>例えば上記の<code>df</code> は <code>国語</code>、<code>数学</code>、 <code>理科</code>、 <code>社会</code>、 <code>英語</code>という５科目の得点は横長に持たれ、他の <code>学生番号</code>, <code>性別</code>, <code>コース</code> といったメタデータは縦長に持たれています。Altair は <code>.encoding()</code> で個々のメタデータに option を割り当てられることから、縦長のテーブルの可視化に適しています。そこで<code>.pandas.melt()</code>を用いて各科目の得点も縦長に持たせましょう。</p>
+<p>例えば上記の<code>df</code> は <code>国語</code>、<code>数学</code>、 <code>理科</code>、 <code>社会</code>、 <code>英語</code>という５科目の得点は横長に持たれ、他の <code>学生番号</code>, <code>性別</code>, <code>コース</code> といったメタデータは縦長に持たれています。Altair は <code>.encode()</code> で個々のメタデータに option を割り当てられることから、縦長のテーブルの可視化に適しています。そこで<code>.pandas.melt()</code>を用いて各科目の得点も縦長に持たせましょう。</p>
 
 </div>
 </div>
