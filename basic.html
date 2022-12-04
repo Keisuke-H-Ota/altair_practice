@@ -13123,26 +13123,26 @@ $( document ).ready(function(){
 <h2 id="&#21487;&#35222;&#21270;&#12484;&#12540;&#12523;&#12392;&#12375;&#12390;&#12398;-Altair-&#12398;&#24375;&#12415;">&#21487;&#35222;&#21270;&#12484;&#12540;&#12523;&#12392;&#12375;&#12390;&#12398; Altair &#12398;&#24375;&#12415;<a class="anchor-link" href="#&#21487;&#35222;&#21270;&#12484;&#12540;&#12523;&#12392;&#12375;&#12390;&#12398;-Altair-&#12398;&#24375;&#12415;">&#182;</a></h2><p>Altair の強みは高度なデータ分析が可能な Python の枠組みでインタラクティブなグラフを自由に作成できるところにあります。同じ Python の可視化ライブラリとして最も普及している <a href="https://matplotlib.org/">Matplotlib</a> はインタラクティブなグラフの作成機能があまり充実していません。一方で Excel はリストを活用することでロップダウンと連動したグラフを作成することなどはできますが、Python のように高度な分析には対応していません。</p>
 <table>
 <thead><tr>
-<th>可視化ツール</th>
-<th>インタラクティブなグラフのカスタマイズ性</th>
-<th>分析の高度さ</th>
+<th style="text-align:left">可視化ツール</th>
+<th style="text-align:left">インタラクティブなグラフのカスタマイズ性</th>
+<th style="text-align:left">分析の高度さ</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Altair</td>
-<td>◎：Vega-Liteに則って自由に作成可能</td>
-<td>◎：Pythonで可能</td>
+<td style="text-align:left">Altair</td>
+<td style="text-align:left">◎：Vega-Liteに則って自由に作成可能</td>
+<td style="text-align:left">◎：Pythonで可能</td>
 </tr>
 <tr>
-<td>Matplotlib</td>
-<td>△：<code>ipywighets</code>や<code>animation.ArtistAnimation()</code>の活用で限定的に可能</td>
-<td>◎：Pythonで可能</td>
+<td style="text-align:left">Matplotlib</td>
+<td style="text-align:left">△：<code>ipywighets</code>や<code>animation.ArtistAnimation()</code>の活用で限定的に可能</td>
+<td style="text-align:left">◎：Pythonで可能</td>
 </tr>
 <tr>
-<td>Excel</td>
-<td>◯：リストを活用したドロップダウンとの連動などが可能</td>
-<td>△：基礎的な集計・検定に限る</td>
+<td style="text-align:left">Excel</td>
+<td style="text-align:left">◯：リストを活用したドロップダウンとの連動などが可能</td>
+<td style="text-align:left">△：基礎的な集計・検定に限る</td>
 </tr>
 </tbody>
 </table>
@@ -13333,34 +13333,34 @@ $( document ).ready(function(){
 <h2 id="&#12464;&#12521;&#12501;&#12398;&#27083;&#25104;">&#12464;&#12521;&#12501;&#12398;&#27083;&#25104;<a class="anchor-link" href="#&#12464;&#12521;&#12501;&#12398;&#27083;&#25104;">&#182;</a></h2><p>altair で作られるグラフは <a href="https://altair-viz.github.io/user_guide/data.html">chart object</a> というクラスから生成されたオブジェクトです。chart object には以下の 6 種類があります。</p>
 <table>
 <thead><tr>
-<th></th>
-<th></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>alt.Chart()</code></td>
-<td>最も基本的なオブジェクト</td>
+<td style="text-align:left"><code>alt.Chart()</code></td>
+<td style="text-align:left">最も基本的なオブジェクト</td>
 </tr>
 <tr>
-<td><code>alt.LayerChart()</code></td>
-<td>複数の<code>alt.Chart()</code> を重ねられるオブジェクト</td>
+<td style="text-align:left"><code>alt.LayerChart()</code></td>
+<td style="text-align:left">複数の<code>alt.Chart()</code> を重ねられるオブジェクト</td>
 </tr>
 <tr>
-<td><code>alt.VConcatChart()</code></td>
-<td>複数の <code>alt.Chart()</code> を縦に並べられるオブジェクト</td>
+<td style="text-align:left"><code>alt.VConcatChart()</code></td>
+<td style="text-align:left">複数の <code>alt.Chart()</code> を縦に並べられるオブジェクト</td>
 </tr>
 <tr>
-<td><code>alt.HConcatChart()</code></td>
-<td>複数の <code>alt.Chart()</code> を横に並べられるオブジェクト</td>
+<td style="text-align:left"><code>alt.HConcatChart()</code></td>
+<td style="text-align:left">複数の <code>alt.Chart()</code> を横に並べられるオブジェクト</td>
 </tr>
 <tr>
-<td><code>alt.RepeatChart()</code></td>
-<td>類似の <code>alt.Chart()</code> を縦や横に並べられるオブジェクト</td>
+<td style="text-align:left"><code>alt.RepeatChart()</code></td>
+<td style="text-align:left">類似の <code>alt.Chart()</code> を縦や横に並べられるオブジェクト</td>
 </tr>
 <tr>
-<td><code>alt.FacetChart()</code></td>
-<td><code>alt.VConcatChart()</code> や <code>alt.HConcatChart()</code> を重ねられるオブジェクト</td>
+<td style="text-align:left"><code>alt.FacetChart()</code></td>
+<td style="text-align:left"><code>alt.VConcatChart()</code> や <code>alt.HConcatChart()</code> を重ねられるオブジェクト</td>
 </tr>
 </tbody>
 </table>
@@ -13382,18 +13382,18 @@ $( document ).ready(function(){
 <h2 id="Mark-&#12392;-Encoding">Mark &#12392; Encoding<a class="anchor-link" href="#Mark-&#12392;-Encoding">&#182;</a></h2><p><code>alt.Chart()</code> でデータを可視化するためには <a href="https://altair-viz.github.io/user_guide/marks.html">.mark_XXXX()</a>と<a href="https://altair-viz.github.io/user_guide/encoding.html">.encode()</a>という2つのメソッドが不可欠です。それぞれの役割は以下の通りです。</p>
 <table>
 <thead><tr>
-<th>メソッド</th>
-<th>役割</th>
+<th style="text-align:left">メソッド</th>
+<th style="text-align:left">役割</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>.mark_XXXX()</code></td>
-<td><code>XXXX</code> は可視化したいグラフの種類によって変わります。各グラフには <a href="https://altair-viz.github.io/user_guide/encoding.html#encoding-channels">channel</a> といった要素があり、引数には全レコードで共通の処理をしたい channel をとります。例えば散布図でプロットの色や形を揃えたいときはここで指定しましょう。</td>
+<td style="text-align:left"><code>.mark_XXXX()</code></td>
+<td style="text-align:left"><code>XXXX</code> は可視化したいグラフの種類によって変わります。各グラフには <a href="https://altair-viz.github.io/user_guide/encoding.html#encoding-channels">channel</a> といった要素があり、引数には全レコードで共通の処理をしたい channel をとります。例えば散布図でプロットの色や形を揃えたいときはここで指定しましょう。</td>
 </tr>
 <tr>
-<td><code>.encode()</code></td>
-<td>引数には1レコードごとに異なる処理をしたい channel をとります。多くのグラフにおいて X 軸の <code>alt.X("列名")</code> や Y 軸の<code>alt.Y("列名")</code> は不可欠です。</td>
+<td style="text-align:left"><code>.encode()</code></td>
+<td style="text-align:left">引数には1レコードごとに異なる処理をしたい channel をとります。多くのグラフにおいて X 軸の <code>alt.X("列名")</code> や Y 軸の<code>alt.Y("列名")</code> は不可欠です。</td>
 </tr>
 </tbody>
 </table>
@@ -13900,30 +13900,30 @@ $( document ).ready(function(){
 <h2 id="&#22793;&#25968;&#22411;&#12398;&#25351;&#23450;">&#22793;&#25968;&#22411;&#12398;&#25351;&#23450;<a class="anchor-link" href="#&#22793;&#25968;&#22411;&#12398;&#25351;&#23450;">&#182;</a></h2><p>Encoding  では、そのカラムの<a href="https://altair-viz.github.io/user_guide/encoding.html#encoding-data-types">変数の型</a>を指定する必要があります。上記のように指定せずとも自動で補完されることもありますが、指定しないとエラーが発生することもあります。指定可能な変数の型は以下のとおりです。</p>
 <table>
 <thead><tr>
-<th>変数</th>
-<th><code>type=XXXX</code></th>
+<th style="text-align:left">変数</th>
+<th style="text-align:left"><code>type=XXXX</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>連続変数</td>
-<td>quantitative</td>
+<td style="text-align:left">連続変数</td>
+<td style="text-align:left">quantitative</td>
 </tr>
 <tr>
-<td>順序変数</td>
-<td>ordinal</td>
+<td style="text-align:left">順序変数</td>
+<td style="text-align:left">ordinal</td>
 </tr>
 <tr>
-<td>名義変数</td>
-<td>nominal</td>
+<td style="text-align:left">名義変数</td>
+<td style="text-align:left">nominal</td>
 </tr>
 <tr>
-<td>時系列変数</td>
-<td>temporal</td>
+<td style="text-align:left">時系列変数</td>
+<td style="text-align:left">temporal</td>
 </tr>
 <tr>
-<td>地理的変数</td>
-<td>geojson</td>
+<td style="text-align:left">地理的変数</td>
+<td style="text-align:left">geojson</td>
 </tr>
 </tbody>
 </table>
@@ -14042,18 +14042,18 @@ $( document ).ready(function(){
 <p>RDB では横長もしくは縦長という2通りでデータを持つことができます。それぞれの<a href="https://altair-viz.github.io/user_guide/data.html#long-form-vs-wide-form-data">特徴</a>を以下に挙げます。</p>
 <table>
 <thead><tr>
-<th>テーブル</th>
-<th>特徴</th>
+<th style="text-align:left">テーブル</th>
+<th style="text-align:left">特徴</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>横長</td>
-<td>独立変数ごとに1つのレコードを持ちます。したがってメタデータはレコードやカラムのラベル名となります。</td>
+<td style="text-align:left">横長</td>
+<td style="text-align:left">独立変数ごとに1つのレコードを持ちます。したがってメタデータはレコードやカラムのラベル名となります。</td>
 </tr>
 <tr>
-<td>縦長</td>
-<td>ログや観測結果ごとに1つのレコードを持ちます。したがってメタデータも RDB のフィールドに記載されます。</td>
+<td style="text-align:left">縦長</td>
+<td style="text-align:left">ログや観測結果ごとに1つのレコードを持ちます。したがってメタデータも RDB のフィールドに記載されます。</td>
 </tr>
 </tbody>
 </table>
