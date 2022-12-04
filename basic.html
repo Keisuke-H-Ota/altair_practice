@@ -13111,8 +13111,8 @@ $( document ).ready(function(){
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#27010;&#35201;">&#27010;&#35201;<a class="anchor-link" href="#&#27010;&#35201;">&#182;</a></h2><p>本稿ではグラフ可視化ライブラリ <a href="https://altair-viz.github.io/index.html">Altair</a> の使い方を紹介させて頂きます。Altair はデータをインタラクティブに可視化するために作成された json 形式の文法 <a href="https://vega.github.io/vega/">vega</a>、<a href="https://vega.github.io/vega-lite/">vega-lite</a>に基づく python ライブラリです。</p>
-<p><a href="https://keisuke-h-ota.github.io/altair_practice/time_series.html">【時系列データ編】</a>も参照してみてください。</p>
+<h2 id="&#27010;&#35201;">&#27010;&#35201;<a class="anchor-link" href="#&#27010;&#35201;">&#182;</a></h2><p>本稿ではグラフ可視化ライブラリ <a href="https://altair-viz.github.io/index.html">Altair</a> の使い方を紹介させて頂きます。Altair はデータをインタラクティブに可視化するために作成された json のフォーマット <a href="https://vega.github.io/vega-lite/">Vega-Lite</a>を Python から出力することができるライブラリです。</p>
+<p>ぜひ<a href="https://keisuke-h-ota.github.io/altair_practice/time_series.html">【時系列データ編】</a>も参照してみてください。</p>
 
 </div>
 </div>
@@ -13120,15 +13120,33 @@ $( document ).ready(function(){
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#38263;&#25152;">&#38263;&#25152;<a class="anchor-link" href="#&#38263;&#25152;">&#182;</a></h3><ul>
-<li>インタラクティブなグラフを html で出力できます。</li>
-<li>グラフを見ながら GUI を操作することで基礎集計の条件を変更できます。</li>
-<li>GUI の操作性はかなりサクサクです。</li>
-</ul>
-<h3 id="&#27880;&#24847;&#28857;">&#27880;&#24847;&#28857;<a class="anchor-link" href="#&#27880;&#24847;&#28857;">&#182;</a></h3><ul>
-<li><a href="https://matplotlib.org/">matplotlib</a>、<a href="https://seaborn.pydata.org/">seaborn</a>、<a href="https://docs.bokeh.org/en/latest/">bokeh</a>、<a href="https://plotly.com/python/">plotly</a>など他の可視化ライブラリと比べると歴史が浅いため、日本語ドキュメントが少なくいくつかのバグが報告されています。</li>
-<li>環境にもよりますが、レコード数が 100K を超えるようなビッグデータのグラフの操作性は落ちることがあります。</li>
-</ul>
+<h2 id="&#21487;&#35222;&#21270;&#12484;&#12540;&#12523;&#12392;&#12375;&#12390;&#12398;-Altair-&#12398;&#24375;&#12415;">&#21487;&#35222;&#21270;&#12484;&#12540;&#12523;&#12392;&#12375;&#12390;&#12398; Altair &#12398;&#24375;&#12415;<a class="anchor-link" href="#&#21487;&#35222;&#21270;&#12484;&#12540;&#12523;&#12392;&#12375;&#12390;&#12398;-Altair-&#12398;&#24375;&#12415;">&#182;</a></h2><p>Altair の強みは高度なデータ分析が可能な Python の枠組みでインタラクティブなグラフを自由に作成できるところにあります。同じ Python の可視化ライブラリとして最も普及している <a href="https://matplotlib.org/">Matplotlib</a> はインタラクティブなグラフの作成機能があまり充実していません。一方で Excel はリストを活用することでロップダウンと連動したグラフを作成することなどはできますが、Python のように高度な分析には対応していません。</p>
+<table>
+<thead><tr>
+<th>可視化ツール</th>
+<th>インタラクティブなグラフのカスタマイズ性</th>
+<th>分析の高度さ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Altair</td>
+<td>◎：Vega-Liteに則って自由に作成可能</td>
+<td>◎：Pythonで可能</td>
+</tr>
+<tr>
+<td>Matplotlib</td>
+<td>△：<code>ipywighets</code>や<code>animation.ArtistAnimation()</code>の活用で限定的に可能</td>
+<td>◎：Pythonで可能</td>
+</tr>
+<tr>
+<td>Excel</td>
+<td>◯：リストを活用したドロップダウンとの連動などが可能</td>
+<td>△：基礎的な集計・検定に限る</td>
+</tr>
+</tbody>
+</table>
+<p>Altair のようにインタラクティブなグラフを作成できる Python の可視化ライブラリとして、他には <a href="https://docs.bokeh.org/en/latest/">Bokeh</a> や <a href="https://plotly.com/python/">Plotly</a> などがあります。それぞれ作成可能なグラフの種類やデザインが異なるため、好みに合わせて使い分けるとよいと思います。個人的な意見としては、三次元モデルの可視化が得意なのは Plotly で、二次元モデルの可視化が得意なのは Altair です。</p>
 
 </div>
 </div>
