@@ -13125,7 +13125,7 @@ $( document ).ready(function(){
 <thead><tr>
 <th style="text-align:left">可視化ツール</th>
 <th style="text-align:left">インタラクティブなグラフのカスタマイズ性</th>
-<th style="text-align:left">分析の高度さ</th>
+<th style="text-align:left">高度な分析</th>
 </tr>
 </thead>
 <tbody>
@@ -13146,7 +13146,7 @@ $( document ).ready(function(){
 </tr>
 </tbody>
 </table>
-<p>Altair のようにインタラクティブなグラフを作成できる Python の可視化ライブラリとして、他には <a href="https://docs.bokeh.org/en/latest/">Bokeh</a> や <a href="https://plotly.com/python/">Plotly</a> などがあります。それぞれ作成可能なグラフの種類やデザインが異なるため、好みに合わせて使い分けるとよいと思います。個人的な意見としては、三次元モデルの可視化が得意なのは Plotly で、二次元モデルの可視化が得意なのは Altair です。</p>
+<p>Altair のようにインタラクティブなグラフを作成できる Python の可視化ライブラリとして、他には <a href="https://docs.bokeh.org/en/latest/">Bokeh</a> や <a href="https://plotly.com/python/">Plotly</a> などがあります。それぞれ作成可能なグラフの種類やデザインが異なるため、好みに合わせて使い分けるとよいと思います。個人的な意見としては、三次元グラフの可視化が得意なのは Plotly で、二次元グラフの可視化が得意なのは Altair です。</p>
 
 </div>
 </div>
@@ -13161,7 +13161,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
@@ -13216,12 +13216,15 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[1]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<div>
+
+  <div id="df-0b6ec48e-e038-4a81-b92d-7e8c97ee7152">
+    <div class="colab-df-container">
+      <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
@@ -13308,6 +13311,82 @@ $( document ).ready(function(){
   </tbody>
 </table>
 </div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-0b6ec48e-e038-4a81-b92d-7e8c97ee7152')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-0b6ec48e-e038-4a81-b92d-7e8c97ee7152 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-0b6ec48e-e038-4a81-b92d-7e8c97ee7152');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+
 </div>
 
 </div>
@@ -13319,13 +13398,93 @@ $( document ).ready(function(){
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#12452;&#12531;&#12473;&#12488;&#12540;&#12523;">&#12452;&#12531;&#12473;&#12488;&#12540;&#12523;<a class="anchor-link" href="#&#12452;&#12531;&#12473;&#12488;&#12540;&#12523;">&#182;</a></h2><p>pip でインストール可能です。</p>
+<h2 id="&#12452;&#12531;&#12473;&#12488;&#12540;&#12523;">&#12452;&#12531;&#12473;&#12488;&#12540;&#12523;<a class="anchor-link" href="#&#12452;&#12531;&#12473;&#12488;&#12540;&#12523;">&#182;</a></h2><p>本ハンズオンでは <code>altair</code> と <code>altair_saver</code> という2つのライブラリを使用します。両方とも pip でインストール可能です。</p>
 
 <pre><code>$ pip install altair altair_saver</code></pre>
 <p>conda でもインストールできます。詳細は<a href="https://altair-viz.github.io/getting_started/installation.html">公式ドキュメント</a>を参照してください。</p>
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="google-colab-&#12398;&#22580;&#21512;">google colab &#12398;&#22580;&#21512;<a class="anchor-link" href="#google-colab-&#12398;&#22580;&#21512;">&#182;</a></h3><p>デフォルトで <code>altair</code> はインストールされています。以下ライブラリをインストールしてください。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span> pip install -U requests
+<span class="o">!</span> pip install altair_saver
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+Requirement already satisfied: requests in /usr/local/lib/python3.8/dist-packages (2.28.1)
+Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /usr/local/lib/python3.8/dist-packages (from requests) (1.26.13)
+Requirement already satisfied: charset-normalizer&lt;3,&gt;=2 in /usr/local/lib/python3.8/dist-packages (from requests) (2.1.1)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.8/dist-packages (from requests) (2022.9.24)
+Requirement already satisfied: idna&lt;4,&gt;=2.5 in /usr/local/lib/python3.8/dist-packages (from requests) (2.10)
+Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+Requirement already satisfied: altair_saver in /usr/local/lib/python3.8/dist-packages (0.5.0)
+Requirement already satisfied: altair-data-server&gt;=0.4.0 in /usr/local/lib/python3.8/dist-packages (from altair_saver) (0.4.1)
+Requirement already satisfied: selenium in /usr/local/lib/python3.8/dist-packages (from altair_saver) (4.7.2)
+Requirement already satisfied: altair-viewer in /usr/local/lib/python3.8/dist-packages (from altair_saver) (0.4.0)
+Requirement already satisfied: altair in /usr/local/lib/python3.8/dist-packages (from altair_saver) (4.2.0)
+Requirement already satisfied: portpicker in /usr/local/lib/python3.8/dist-packages (from altair-data-server&gt;=0.4.0-&gt;altair_saver) (1.3.9)
+Requirement already satisfied: tornado in /usr/local/lib/python3.8/dist-packages (from altair-data-server&gt;=0.4.0-&gt;altair_saver) (6.0.4)
+Requirement already satisfied: jinja2 in /usr/local/lib/python3.8/dist-packages (from altair-&gt;altair_saver) (2.11.3)
+Requirement already satisfied: pandas&gt;=0.18 in /usr/local/lib/python3.8/dist-packages (from altair-&gt;altair_saver) (1.3.5)
+Requirement already satisfied: toolz in /usr/local/lib/python3.8/dist-packages (from altair-&gt;altair_saver) (0.12.0)
+Requirement already satisfied: jsonschema&gt;=3.0 in /usr/local/lib/python3.8/dist-packages (from altair-&gt;altair_saver) (4.3.3)
+Requirement already satisfied: entrypoints in /usr/local/lib/python3.8/dist-packages (from altair-&gt;altair_saver) (0.4)
+Requirement already satisfied: numpy in /usr/local/lib/python3.8/dist-packages (from altair-&gt;altair_saver) (1.21.6)
+Requirement already satisfied: importlib-resources&gt;=1.4.0 in /usr/local/lib/python3.8/dist-packages (from jsonschema&gt;=3.0-&gt;altair-&gt;altair_saver) (5.10.0)
+Requirement already satisfied: pyrsistent!=0.17.0,!=0.17.1,!=0.17.2,&gt;=0.14.0 in /usr/local/lib/python3.8/dist-packages (from jsonschema&gt;=3.0-&gt;altair-&gt;altair_saver) (0.19.2)
+Requirement already satisfied: attrs&gt;=17.4.0 in /usr/local/lib/python3.8/dist-packages (from jsonschema&gt;=3.0-&gt;altair-&gt;altair_saver) (22.1.0)
+Requirement already satisfied: zipp&gt;=3.1.0 in /usr/local/lib/python3.8/dist-packages (from importlib-resources&gt;=1.4.0-&gt;jsonschema&gt;=3.0-&gt;altair-&gt;altair_saver) (3.11.0)
+Requirement already satisfied: python-dateutil&gt;=2.7.3 in /usr/local/lib/python3.8/dist-packages (from pandas&gt;=0.18-&gt;altair-&gt;altair_saver) (2.8.2)
+Requirement already satisfied: pytz&gt;=2017.3 in /usr/local/lib/python3.8/dist-packages (from pandas&gt;=0.18-&gt;altair-&gt;altair_saver) (2022.6)
+Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.8/dist-packages (from python-dateutil&gt;=2.7.3-&gt;pandas&gt;=0.18-&gt;altair-&gt;altair_saver) (1.15.0)
+Requirement already satisfied: MarkupSafe&gt;=0.23 in /usr/local/lib/python3.8/dist-packages (from jinja2-&gt;altair-&gt;altair_saver) (2.0.1)
+Requirement already satisfied: certifi&gt;=2021.10.8 in /usr/local/lib/python3.8/dist-packages (from selenium-&gt;altair_saver) (2022.9.24)
+Requirement already satisfied: urllib3[socks]~=1.26 in /usr/local/lib/python3.8/dist-packages (from selenium-&gt;altair_saver) (1.26.13)
+Requirement already satisfied: trio~=0.17 in /usr/local/lib/python3.8/dist-packages (from selenium-&gt;altair_saver) (0.22.0)
+Requirement already satisfied: trio-websocket~=0.9 in /usr/local/lib/python3.8/dist-packages (from selenium-&gt;altair_saver) (0.9.2)
+Requirement already satisfied: idna in /usr/local/lib/python3.8/dist-packages (from trio~=0.17-&gt;selenium-&gt;altair_saver) (2.10)
+Requirement already satisfied: outcome in /usr/local/lib/python3.8/dist-packages (from trio~=0.17-&gt;selenium-&gt;altair_saver) (1.2.0)
+Requirement already satisfied: exceptiongroup&gt;=1.0.0rc9 in /usr/local/lib/python3.8/dist-packages (from trio~=0.17-&gt;selenium-&gt;altair_saver) (1.0.4)
+Requirement already satisfied: async-generator&gt;=1.9 in /usr/local/lib/python3.8/dist-packages (from trio~=0.17-&gt;selenium-&gt;altair_saver) (1.10)
+Requirement already satisfied: sniffio in /usr/local/lib/python3.8/dist-packages (from trio~=0.17-&gt;selenium-&gt;altair_saver) (1.3.0)
+Requirement already satisfied: sortedcontainers in /usr/local/lib/python3.8/dist-packages (from trio~=0.17-&gt;selenium-&gt;altair_saver) (2.4.0)
+Requirement already satisfied: wsproto&gt;=0.14 in /usr/local/lib/python3.8/dist-packages (from trio-websocket~=0.9-&gt;selenium-&gt;altair_saver) (1.2.0)
+Requirement already satisfied: PySocks!=1.5.7,&lt;2.0,&gt;=1.5.6 in /usr/local/lib/python3.8/dist-packages (from urllib3[socks]~=1.26-&gt;selenium-&gt;altair_saver) (1.7.1)
+Requirement already satisfied: h11&lt;1,&gt;=0.9.0 in /usr/local/lib/python3.8/dist-packages (from wsproto&gt;=0.14-&gt;trio-websocket~=0.9-&gt;selenium-&gt;altair_saver) (0.14.0)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13371,7 +13530,7 @@ $( document ).ready(function(){
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>これらのオブジェクトはすべて Pandas DataFrame や json、csv などを引数とし、そのデータを可視化することができます。次は最も基本的な Chart クラスの構成を見ていきましょう。</p>
+<p>これらのオブジェクトはすべて Pandas DataFrame や json、csv などを引数とし、そのデータを可視化することができます。次は最も基本的な <code>alt.Chart()</code> の構成を見ていきましょう。</p>
 
 </div>
 </div>
@@ -13404,7 +13563,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">altair</span> <span class="k">as</span> <span class="nn">alt</span>
@@ -13417,7 +13576,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">altair_chart</span> <span class="o">=</span> <span class="p">(</span>
@@ -13443,19 +13602,19 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[3]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-caabc0c6bf0a4260ab8dfad8be156dc7"></div>
+<div id="altair-viz-f373e21ce703462cb66fec4e2562ee67"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-caabc0c6bf0a4260ab8dfad8be156dc7") {
-      outputDiv = document.getElementById("altair-viz-caabc0c6bf0a4260ab8dfad8be156dc7");
+    if (outputDiv.id !== "altair-viz-f373e21ce703462cb66fec4e2562ee67") {
+      outputDiv = document.getElementById("altair-viz-f373e21ce703462cb66fec4e2562ee67");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -13521,12 +13680,12 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">altair_saver</span> <span class="kn">import</span> <span class="n">save</span>
-<span class="n">save</span><span class="p">(</span><span class="n">altair_chart</span><span class="p">,</span> <span class="s2">&quot;saved_chart.html&quot;</span><span class="p">,</span> <span class="n">inline</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">save</span><span class="p">(</span><span class="n">altair_chart</span><span class="p">,</span> <span class="s2">&quot;saved_chart.json&quot;</span><span class="p">)</span>
+<span class="n">save</span><span class="p">(</span><span class="n">altair_chart</span><span class="p">,</span> <span class="s2">&quot;./saved_chart.html&quot;</span><span class="p">,</span> <span class="n">inline</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">save</span><span class="p">(</span><span class="n">altair_chart</span><span class="p">,</span> <span class="s2">&quot;./saved_chart.json&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13561,7 +13720,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">altair_chart_with_options</span> <span class="o">=</span> <span class="p">(</span>
@@ -13633,19 +13792,19 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[5]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-356004dde1f847bbadf528cfcd620d8b"></div>
+<div id="altair-viz-51e8d19ff9de4e5da073d3e9778a2927"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-356004dde1f847bbadf528cfcd620d8b") {
-      outputDiv = document.getElementById("altair-viz-356004dde1f847bbadf528cfcd620d8b");
+    if (outputDiv.id !== "altair-viz-51e8d19ff9de4e5da073d3e9778a2927") {
+      outputDiv = document.getElementById("altair-viz-51e8d19ff9de4e5da073d3e9778a2927");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -13719,7 +13878,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">altair_chart_with_options</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;グラフのタイトルはここ&quot;</span><span class="p">)</span>
@@ -13735,19 +13894,19 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[6]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-6d2e1350fa6b43ca9c6c143fe77fd894"></div>
+<div id="altair-viz-7618928c7abe47a685ad4b141dd1f3cd"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-6d2e1350fa6b43ca9c6c143fe77fd894") {
-      outputDiv = document.getElementById("altair-viz-6d2e1350fa6b43ca9c6c143fe77fd894");
+    if (outputDiv.id !== "altair-viz-7618928c7abe47a685ad4b141dd1f3cd") {
+      outputDiv = document.getElementById("altair-viz-7618928c7abe47a685ad4b141dd1f3cd");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -13793,7 +13952,7 @@ $( document ).ready(function(){
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-84fa8bf75cf1b4016f3998f52cc793b2"}, "mark": {"type": "point", "opacity": 0.9, "shape": "triangle", "size": 30}, "encoding": {"color": {"field": "\u6027\u5225", "legend": {"title": "\u51e1\u4f8b\u30bf\u30a4\u30c8\u30eb\u306f\u3053\u3053", "titleFont": "Yu Gothic UI"}, "scale": {"domain": ["\u7537", "\u5973"], "range": ["steelblue", "darkred"]}, "type": "nominal"}, "row": {"field": "\u30b3\u30fc\u30b9", "header": {"labelAngle": -90, "labelFont": "Yu Gothic UI", "labelFontSize": 15, "title": "\u30d8\u30c3\u30c0\u30fc\u30bf\u30a4\u30c8\u30eb\u306f\u3053\u3053", "titleAngle": -90, "titleFont": "Yu Gothic UI", "titleFontSize": 18}, "type": "nominal"}, "x": {"axis": {"grid": true, "labelAngle": 0, "labelFont": "Yu Gothic UI", "labelFontSize": 15, "ticks": false, "title": "X\u8ef8\u306e\u30bf\u30a4\u30c8\u30eb\u306f\u3053\u3053", "titleAngle": 0, "titleFont": "Yu Gothic UI", "titleFontSize": 18}, "field": "\u56fd\u8a9e", "scale": {"bins": [0, 20, 40, 60, 80, 100], "domain": [0, 100]}, "type": "quantitative"}, "y": {"axis": {"grid": true, "labelAngle": 0, "labelFont": "Yu Gothic UI", "labelFontSize": 15, "ticks": false, "title": "Y\u8ef8\u306e\u30bf\u30a4\u30c8\u30eb\u306f\u3053\u3053", "titleAngle": -90, "titleFont": "Yu Gothic UI", "titleFontSize": 18}, "field": "\u6570\u5b66", "scale": {"bins": [0, 20, 40, 60, 80, 100], "domain": [0, 100]}, "type": "quantitative"}}, "height": 100, "title": "\u30b0\u30e9\u30d5\u306e\u30bf\u30a4\u30c8\u30eb\u306f\u3053\u3053", "width": 200, "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "datasets": {"data-84fa8bf75cf1b4016f3998f52cc793b2": [{"\u5b66\u751f\u756a\u53f7": "ID01", "\u56fd\u8a9e": 18, "\u6570\u5b66": 7, "\u7406\u79d1": 15, "\u793e\u4f1a": 17, "\u82f1\u8a9e": 11, "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u6027\u5225": "\u5973"}, {"\u5b66\u751f\u756a\u53f7": "ID02", "\u56fd\u8a9e": 47, "\u6570\u5b66": 34, "\u7406\u79d1": 49, "\u793e\u4f1a": 57, "\u82f1\u8a9e": 80, "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u6027\u5225": "\u5973"}, {"\u5b66\u751f\u756a\u53f7": "ID03", "\u56fd\u8a9e": 32, "\u6570\u5b66": 39, "\u7406\u79d1": 41, "\u793e\u4f1a": 42, "\u82f1\u8a9e": 42, "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u6027\u5225": "\u7537"}, {"\u5b66\u751f\u756a\u53f7": "ID04", "\u56fd\u8a9e": 64, "\u6570\u5b66": 34, "\u7406\u79d1": 68, "\u793e\u4f1a": 71, "\u82f1\u8a9e": 54, "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u6027\u5225": "\u5973"}, {"\u5b66\u751f\u756a\u53f7": "ID05", "\u56fd\u8a9e": 21, "\u6570\u5b66": 41, "\u7406\u79d1": 45, "\u793e\u4f1a": 51, "\u82f1\u8a9e": 47, "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u6027\u5225": "\u7537"}, {"\u5b66\u751f\u756a\u53f7": "ID06", "\u56fd\u8a9e": 47, "\u6570\u5b66": 41, "\u7406\u79d1": 56, "\u793e\u4f1a": 64, "\u82f1\u8a9e": 75, "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u6027\u5225": "\u5973"}, {"\u5b66\u751f\u756a\u53f7": "ID07", "\u56fd\u8a9e": 77, "\u6570\u5b66": 58, "\u7406\u79d1": 60, "\u793e\u4f1a": 69, "\u82f1\u8a9e": 74, "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u6027\u5225": "\u5973"}, {"\u5b66\u751f\u756a\u53f7": "ID08", "\u56fd\u8a9e": 70, "\u6570\u5b66": 47, "\u7406\u79d1": 74, "\u793e\u4f1a": 80, "\u82f1\u8a9e": 46, "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u6027\u5225": "\u7537"}, {"\u5b66\u751f\u756a\u53f7": "ID09", "\u56fd\u8a9e": 57, "\u6570\u5b66": 43, "\u7406\u79d1": 49, "\u793e\u4f1a": 58, "\u82f1\u8a9e": 40, "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u6027\u5225": "\u5973"}, {"\u5b66\u751f\u756a\u53f7": "ID10", "\u56fd\u8a9e": 33, "\u6570\u5b66": 48, "\u7406\u79d1": 53, "\u793e\u4f1a": 61, "\u82f1\u8a9e": 76, "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u6027\u5225": "\u5973"}, {"\u5b66\u751f\u756a\u53f7": "ID11", "\u56fd\u8a9e": 45, "\u6570\u5b66": 58, "\u7406\u79d1": 47, "\u793e\u4f1a": 54, "\u82f1\u8a9e": 45, "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u6027\u5225": "\u7537"}, {"\u5b66\u751f\u756a\u53f7": "ID12", "\u56fd\u8a9e": 35, "\u6570\u5b66": 49, "\u7406\u79d1": 51, "\u793e\u4f1a": 67, "\u82f1\u8a9e": 46, "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u6027\u5225": "\u5973"}, {"\u5b66\u751f\u756a\u53f7": "ID13", "\u56fd\u8a9e": 30, "\u6570\u5b66": 37, "\u7406\u79d1": 41, "\u793e\u4f1a": 48, "\u82f1\u8a9e": 48, "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u6027\u5225": "\u7537"}, {"\u5b66\u751f\u756a\u53f7": "ID14", "\u56fd\u8a9e": 46, "\u6570\u5b66": 49, "\u7406\u79d1": 50, "\u793e\u4f1a": 53, "\u82f1\u8a9e": 50, "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u6027\u5225": "\u7537"}, {"\u5b66\u751f\u756a\u53f7": "ID15", "\u56fd\u8a9e": 79, "\u6570\u5b66": 63, "\u7406\u79d1": 96, "\u793e\u4f1a": 93, "\u82f1\u8a9e": 88, "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u6027\u5225": "\u5973"}, {"\u5b66\u751f\u756a\u53f7": "ID16", "\u56fd\u8a9e": 60, "\u6570\u5b66": 43, "\u7406\u79d1": 58, "\u793e\u4f1a": 66, "\u82f1\u8a9e": 56, "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u6027\u5225": "\u5973"}, {"\u5b66\u751f\u756a\u53f7": "ID17", "\u56fd\u8a9e": 43, "\u6570\u5b66": 36, "\u7406\u79d1": 36, "\u793e\u4f1a": 42, "\u82f1\u8a9e": 47, "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u6027\u5225": "\u5973"}, {"\u5b66\u751f\u756a\u53f7": "ID18", "\u56fd\u8a9e": 31, "\u6570\u5b66": 37, "\u7406\u79d1": 40, "\u793e\u4f1a": 44, "\u82f1\u8a9e": 55, "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u6027\u5225": "\u7537"}, {"\u5b66\u751f\u756a\u53f7": "ID19", "\u56fd\u8a9e": 91, "\u6570\u5b66": 64, "\u7406\u79d1": 84, "\u793e\u4f1a": 96, "\u82f1\u8a9e": 96, "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u6027\u5225": "\u5973"}, {"\u5b66\u751f\u756a\u53f7": "ID20", "\u56fd\u8a9e": 100, "\u6570\u5b66": 90, "\u7406\u79d1": 100, "\u793e\u4f1a": 100, "\u82f1\u8a9e": 100, "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u6027\u5225": "\u7537"}, {"\u5b66\u751f\u756a\u53f7": "ID21", "\u56fd\u8a9e": 48, "\u6570\u5b66": 49, "\u7406\u79d1": 57, "\u793e\u4f1a": 68, "\u82f1\u8a9e": 44, "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u6027\u5225": "\u5973"}, {"\u5b66\u751f\u756a\u53f7": "ID22", "\u56fd\u8a9e": 56, "\u6570\u5b66": 63, "\u7406\u79d1": 55, "\u793e\u4f1a": 64, "\u82f1\u8a9e": 45, "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u6027\u5225": "\u5973"}, {"\u5b66\u751f\u756a\u53f7": "ID23", "\u56fd\u8a9e": 29, "\u6570\u5b66": 26, "\u7406\u79d1": 36, "\u793e\u4f1a": 38, "\u82f1\u8a9e": 32, "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u6027\u5225": "\u7537"}, {"\u5b66\u751f\u756a\u53f7": "ID24", "\u56fd\u8a9e": 100, "\u6570\u5b66": 85, "\u7406\u79d1": 90, "\u793e\u4f1a": 95, "\u82f1\u8a9e": 100, "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u6027\u5225": "\u7537"}, {"\u5b66\u751f\u756a\u53f7": "ID25", "\u56fd\u8a9e": 30, "\u6570\u5b66": 33, "\u7406\u79d1": 37, "\u793e\u4f1a": 41, "\u82f1\u8a9e": 35, "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u6027\u5225": "\u7537"}, {"\u5b66\u751f\u756a\u53f7": "ID26", "\u56fd\u8a9e": 13, "\u6570\u5b66": 15, "\u7406\u79d1": 20, "\u793e\u4f1a": 19, "\u82f1\u8a9e": 24, "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u6027\u5225": "\u7537"}, {"\u5b66\u751f\u756a\u53f7": "ID27", "\u56fd\u8a9e": 21, "\u6570\u5b66": 17, "\u7406\u79d1": 24, "\u793e\u4f1a": 26, "\u82f1\u8a9e": 15, "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u6027\u5225": "\u7537"}, {"\u5b66\u751f\u756a\u53f7": "ID28", "\u56fd\u8a9e": 57, "\u6570\u5b66": 60, "\u7406\u79d1": 58, "\u793e\u4f1a": 61, "\u82f1\u8a9e": 43, "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u6027\u5225": "\u7537"}, {"\u5b66\u751f\u756a\u53f7": "ID29", "\u56fd\u8a9e": 40, "\u6570\u5b66": 36, "\u7406\u79d1": 42, "\u793e\u4f1a": 47, "\u82f1\u8a9e": 45, "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u6027\u5225": "\u5973"}, {"\u5b66\u751f\u756a\u53f7": "ID30", "\u56fd\u8a9e": 54, "\u6570\u5b66": 46, "\u7406\u79d1": 47, "\u793e\u4f1a": 55, "\u82f1\u8a9e": 47, "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u6027\u5225": "\u5973"}]}}, {"mode": "vega-lite"});
+  })({"config": {"axis": {"ticks": true, "grid": true, "labelFont": "Yu Gothic UI", "labelFontSize": 15, "labelAngle": 0, "titleFont": "Yu Gothic UI", "titleFontSize": 18}, "legend": {"labelFont": "Yu Gothic UI", "labelFontSize": 15, "labelAngle": 0, "titleFont": "Yu Gothic UI", "titleFontSize": 18, "titleAngle": 0}, "header": {"labelFont": "Yu Gothic UI", "labelFontSize": 20, "labelAngle": 0, "titleFont": "Yu Gothic UI", "titleFontSize": 25, "titleAngle": 0}, "mark": {"font": "Yu Gothic UI"}, "title": {"font": "Yu Gothic UI", "subtitleFont": "Yu Gothic UI"}, "view": {"width": 300, "height": 300}, "background": "white"}, "data": {"name": "data-84fa8bf75cf1b4016f3998f52cc793b2"}, "mark": {"type": "point", "opacity": 0.9, "shape": "triangle", "size": 30}, "encoding": {"color": {"field": "\u6027\u5225", "legend": {"title": "\u51e1\u4f8b\u30bf\u30a4\u30c8\u30eb\u306f\u3053\u3053", "titleFont": "Yu Gothic UI"}, "scale": {"domain": ["\u7537", "\u5973"], "range": ["steelblue", "darkred"]}, "type": "nominal"}, "row": {"field": "\u30b3\u30fc\u30b9", "header": {"labelAngle": -90, "labelFont": "Yu Gothic UI", "labelFontSize": 15, "title": "\u30d8\u30c3\u30c0\u30fc\u30bf\u30a4\u30c8\u30eb\u306f\u3053\u3053", "titleAngle": -90, "titleFont": "Yu Gothic UI", "titleFontSize": 18}, "type": "nominal"}, "x": {"axis": {"grid": true, "labelAngle": 0, "labelFont": "Yu Gothic UI", "labelFontSize": 15, "ticks": false, "title": "X\u8ef8\u306e\u30bf\u30a4\u30c8\u30eb\u306f\u3053\u3053", "titleAngle": 0, "titleFont": "Yu Gothic UI", "titleFontSize": 18}, "field": "\u56fd\u8a9e", "scale": {"bins": [0, 20, 40, 60, 80, 100], "domain": [0, 100]}, "type": "quantitative"}, "y": {"axis": {"grid": true, "labelAngle": 0, "labelFont": "Yu Gothic UI", "labelFontSize": 15, "ticks": false, "title": "Y\u8ef8\u306e\u30bf\u30a4\u30c8\u30eb\u306f\u3053\u3053", "titleAngle": -90, "titleFont": "Yu Gothic UI", "titleFontSize": 18}, "field": "\u6570\u5b66", "scale": {"bins": [0, 20, 40, 60, 80, 100], "domain": [0, 100]}, "type": "quantitative"}}, "height": 100, "title": "\u30b0\u30e9\u30d5\u306e\u30bf\u30a4\u30c8\u30eb\u306f\u3053\u3053", "width": 200, "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "datasets": {"data-84fa8bf75cf1b4016f3998f52cc793b2": [{"\u5b66\u751f\u756a\u53f7": "ID01", "\u56fd\u8a9e": 18, "\u6570\u5b66": 7, "\u7406\u79d1": 15, "\u793e\u4f1a": 17, "\u82f1\u8a9e": 11, "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u6027\u5225": "\u5973"}, {"\u5b66\u751f\u756a\u53f7": "ID02", "\u56fd\u8a9e": 47, "\u6570\u5b66": 34, "\u7406\u79d1": 49, "\u793e\u4f1a": 57, "\u82f1\u8a9e": 80, "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u6027\u5225": "\u5973"}, {"\u5b66\u751f\u756a\u53f7": "ID03", "\u56fd\u8a9e": 32, "\u6570\u5b66": 39, "\u7406\u79d1": 41, "\u793e\u4f1a": 42, "\u82f1\u8a9e": 42, "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u6027\u5225": "\u7537"}, {"\u5b66\u751f\u756a\u53f7": "ID04", "\u56fd\u8a9e": 64, "\u6570\u5b66": 34, "\u7406\u79d1": 68, "\u793e\u4f1a": 71, "\u82f1\u8a9e": 54, "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u6027\u5225": "\u5973"}, {"\u5b66\u751f\u756a\u53f7": "ID05", "\u56fd\u8a9e": 21, "\u6570\u5b66": 41, "\u7406\u79d1": 45, "\u793e\u4f1a": 51, "\u82f1\u8a9e": 47, "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u6027\u5225": "\u7537"}, {"\u5b66\u751f\u756a\u53f7": "ID06", "\u56fd\u8a9e": 47, "\u6570\u5b66": 41, "\u7406\u79d1": 56, "\u793e\u4f1a": 64, "\u82f1\u8a9e": 75, "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u6027\u5225": "\u5973"}, {"\u5b66\u751f\u756a\u53f7": "ID07", "\u56fd\u8a9e": 77, "\u6570\u5b66": 58, "\u7406\u79d1": 60, "\u793e\u4f1a": 69, "\u82f1\u8a9e": 74, "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u6027\u5225": "\u5973"}, {"\u5b66\u751f\u756a\u53f7": "ID08", "\u56fd\u8a9e": 70, "\u6570\u5b66": 47, "\u7406\u79d1": 74, "\u793e\u4f1a": 80, "\u82f1\u8a9e": 46, "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u6027\u5225": "\u7537"}, {"\u5b66\u751f\u756a\u53f7": "ID09", "\u56fd\u8a9e": 57, "\u6570\u5b66": 43, "\u7406\u79d1": 49, "\u793e\u4f1a": 58, "\u82f1\u8a9e": 40, "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u6027\u5225": "\u5973"}, {"\u5b66\u751f\u756a\u53f7": "ID10", "\u56fd\u8a9e": 33, "\u6570\u5b66": 48, "\u7406\u79d1": 53, "\u793e\u4f1a": 61, "\u82f1\u8a9e": 76, "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u6027\u5225": "\u5973"}, {"\u5b66\u751f\u756a\u53f7": "ID11", "\u56fd\u8a9e": 45, "\u6570\u5b66": 58, "\u7406\u79d1": 47, "\u793e\u4f1a": 54, "\u82f1\u8a9e": 45, "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u6027\u5225": "\u7537"}, {"\u5b66\u751f\u756a\u53f7": "ID12", "\u56fd\u8a9e": 35, "\u6570\u5b66": 49, "\u7406\u79d1": 51, "\u793e\u4f1a": 67, "\u82f1\u8a9e": 46, "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u6027\u5225": "\u5973"}, {"\u5b66\u751f\u756a\u53f7": "ID13", "\u56fd\u8a9e": 30, "\u6570\u5b66": 37, "\u7406\u79d1": 41, "\u793e\u4f1a": 48, "\u82f1\u8a9e": 48, "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u6027\u5225": "\u7537"}, {"\u5b66\u751f\u756a\u53f7": "ID14", "\u56fd\u8a9e": 46, "\u6570\u5b66": 49, "\u7406\u79d1": 50, "\u793e\u4f1a": 53, "\u82f1\u8a9e": 50, "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u6027\u5225": "\u7537"}, {"\u5b66\u751f\u756a\u53f7": "ID15", "\u56fd\u8a9e": 79, "\u6570\u5b66": 63, "\u7406\u79d1": 96, "\u793e\u4f1a": 93, "\u82f1\u8a9e": 88, "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u6027\u5225": "\u5973"}, {"\u5b66\u751f\u756a\u53f7": "ID16", "\u56fd\u8a9e": 60, "\u6570\u5b66": 43, "\u7406\u79d1": 58, "\u793e\u4f1a": 66, "\u82f1\u8a9e": 56, "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u6027\u5225": "\u5973"}, {"\u5b66\u751f\u756a\u53f7": "ID17", "\u56fd\u8a9e": 43, "\u6570\u5b66": 36, "\u7406\u79d1": 36, "\u793e\u4f1a": 42, "\u82f1\u8a9e": 47, "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u6027\u5225": "\u5973"}, {"\u5b66\u751f\u756a\u53f7": "ID18", "\u56fd\u8a9e": 31, "\u6570\u5b66": 37, "\u7406\u79d1": 40, "\u793e\u4f1a": 44, "\u82f1\u8a9e": 55, "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u6027\u5225": "\u7537"}, {"\u5b66\u751f\u756a\u53f7": "ID19", "\u56fd\u8a9e": 91, "\u6570\u5b66": 64, "\u7406\u79d1": 84, "\u793e\u4f1a": 96, "\u82f1\u8a9e": 96, "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u6027\u5225": "\u5973"}, {"\u5b66\u751f\u756a\u53f7": "ID20", "\u56fd\u8a9e": 100, "\u6570\u5b66": 90, "\u7406\u79d1": 100, "\u793e\u4f1a": 100, "\u82f1\u8a9e": 100, "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u6027\u5225": "\u7537"}, {"\u5b66\u751f\u756a\u53f7": "ID21", "\u56fd\u8a9e": 48, "\u6570\u5b66": 49, "\u7406\u79d1": 57, "\u793e\u4f1a": 68, "\u82f1\u8a9e": 44, "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u6027\u5225": "\u5973"}, {"\u5b66\u751f\u756a\u53f7": "ID22", "\u56fd\u8a9e": 56, "\u6570\u5b66": 63, "\u7406\u79d1": 55, "\u793e\u4f1a": 64, "\u82f1\u8a9e": 45, "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u6027\u5225": "\u5973"}, {"\u5b66\u751f\u756a\u53f7": "ID23", "\u56fd\u8a9e": 29, "\u6570\u5b66": 26, "\u7406\u79d1": 36, "\u793e\u4f1a": 38, "\u82f1\u8a9e": 32, "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u6027\u5225": "\u7537"}, {"\u5b66\u751f\u756a\u53f7": "ID24", "\u56fd\u8a9e": 100, "\u6570\u5b66": 85, "\u7406\u79d1": 90, "\u793e\u4f1a": 95, "\u82f1\u8a9e": 100, "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u6027\u5225": "\u7537"}, {"\u5b66\u751f\u756a\u53f7": "ID25", "\u56fd\u8a9e": 30, "\u6570\u5b66": 33, "\u7406\u79d1": 37, "\u793e\u4f1a": 41, "\u82f1\u8a9e": 35, "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u6027\u5225": "\u7537"}, {"\u5b66\u751f\u756a\u53f7": "ID26", "\u56fd\u8a9e": 13, "\u6570\u5b66": 15, "\u7406\u79d1": 20, "\u793e\u4f1a": 19, "\u82f1\u8a9e": 24, "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u6027\u5225": "\u7537"}, {"\u5b66\u751f\u756a\u53f7": "ID27", "\u56fd\u8a9e": 21, "\u6570\u5b66": 17, "\u7406\u79d1": 24, "\u793e\u4f1a": 26, "\u82f1\u8a9e": 15, "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u6027\u5225": "\u7537"}, {"\u5b66\u751f\u756a\u53f7": "ID28", "\u56fd\u8a9e": 57, "\u6570\u5b66": 60, "\u7406\u79d1": 58, "\u793e\u4f1a": 61, "\u82f1\u8a9e": 43, "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u6027\u5225": "\u7537"}, {"\u5b66\u751f\u756a\u53f7": "ID29", "\u56fd\u8a9e": 40, "\u6570\u5b66": 36, "\u7406\u79d1": 42, "\u793e\u4f1a": 47, "\u82f1\u8a9e": 45, "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u6027\u5225": "\u5973"}, {"\u5b66\u751f\u756a\u53f7": "ID30", "\u56fd\u8a9e": 54, "\u6570\u5b66": 46, "\u7406\u79d1": 47, "\u793e\u4f1a": 55, "\u82f1\u8a9e": 47, "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u6027\u5225": "\u5973"}]}}, {"mode": "vega-lite"});
 </script>
 </div>
 
@@ -13806,14 +13965,14 @@ $( document ).ready(function(){
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#12486;&#12540;&#12510;&#12398;&#35373;&#23450;">&#12486;&#12540;&#12510;&#12398;&#35373;&#23450;<a class="anchor-link" href="#&#12486;&#12540;&#12510;&#12398;&#35373;&#23450;">&#182;</a></h2><p>Altair で複数の Figure を作成する際、軸やヘッダー、凡例、グラフのサイズなどを毎回指定していてはコードが冗長になってしまいます。すべてのグラフに共通させたいパラメータは <code>alt.themes.register()</code> で一括登録してしまうのがオススメです。ちなみにここで指定したパラメータは、登録後に個別の<code>.encoding()</code>で上書き可能です。</p>
+<h2 id="&#12486;&#12540;&#12510;&#12398;&#35373;&#23450;">&#12486;&#12540;&#12510;&#12398;&#35373;&#23450;<a class="anchor-link" href="#&#12486;&#12540;&#12510;&#12398;&#35373;&#23450;">&#182;</a></h2><p>Altair で複数の Figure を作成する際、軸やヘッダー、凡例、グラフのサイズなどを毎回指定していてはコードが冗長になってしまいます。すべてのグラフに共通させたいパラメータは <code>alt.themes.register()</code> で一括登録してしまうのがオススメです。ちなみにここで指定したパラメータは、登録後に個別の<code>.encode()</code>で上書き可能です。</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">font_config</span><span class="p">():</span>
@@ -13879,7 +14038,7 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[7]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
@@ -13934,7 +14093,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span>
@@ -13960,19 +14119,19 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[8]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-888397407c7e464f9e1b3ac1b457e2fd"></div>
+<div id="altair-viz-e34ab7c630a7435298aaf5d6b46c2a30"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-888397407c7e464f9e1b3ac1b457e2fd") {
-      outputDiv = document.getElementById("altair-viz-888397407c7e464f9e1b3ac1b457e2fd");
+    if (outputDiv.id !== "altair-viz-e34ab7c630a7435298aaf5d6b46c2a30") {
+      outputDiv = document.getElementById("altair-viz-e34ab7c630a7435298aaf5d6b46c2a30");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -14036,35 +14195,247 @@ $( document ).ready(function(){
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+  <div id="df-fc5e1ab2-1dc3-4139-9b4f-feef71e5a454">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>学生番号</th>
+      <th>国語</th>
+      <th>数学</th>
+      <th>理科</th>
+      <th>社会</th>
+      <th>英語</th>
+      <th>コース</th>
+      <th>性別</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>ID01</td>
+      <td>18</td>
+      <td>7</td>
+      <td>15</td>
+      <td>17</td>
+      <td>11</td>
+      <td>普通</td>
+      <td>女</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>ID02</td>
+      <td>47</td>
+      <td>34</td>
+      <td>49</td>
+      <td>57</td>
+      <td>80</td>
+      <td>特進</td>
+      <td>女</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>ID03</td>
+      <td>32</td>
+      <td>39</td>
+      <td>41</td>
+      <td>42</td>
+      <td>42</td>
+      <td>普通</td>
+      <td>男</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>ID04</td>
+      <td>64</td>
+      <td>34</td>
+      <td>68</td>
+      <td>71</td>
+      <td>54</td>
+      <td>理数</td>
+      <td>女</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>ID05</td>
+      <td>21</td>
+      <td>41</td>
+      <td>45</td>
+      <td>51</td>
+      <td>47</td>
+      <td>普通</td>
+      <td>男</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-fc5e1ab2-1dc3-4139-9b4f-feef71e5a454')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-fc5e1ab2-1dc3-4139-9b4f-feef71e5a454 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-fc5e1ab2-1dc3-4139-9b4f-feef71e5a454');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>RDB では横長もしくは縦長という2通りでデータを持つことができます。それぞれの<a href="https://altair-viz.github.io/user_guide/data.html#long-form-vs-wide-form-data">特徴</a>を以下に挙げます。</p>
+<h2 id="&#32294;&#38263;&#12487;&#12540;&#12479;&#12408;&#12398;&#22793;&#25563;">&#32294;&#38263;&#12487;&#12540;&#12479;&#12408;&#12398;&#22793;&#25563;<a class="anchor-link" href="#&#32294;&#38263;&#12487;&#12540;&#12479;&#12408;&#12398;&#22793;&#25563;">&#182;</a></h2><p>RDB には横長もしくは縦長という<a href="https://altair-viz.github.io/user_guide/data.html#long-form-vs-wide-form-data">データの構造</a>があります。これはメタデータをどのように持つかの違いです。</p>
 <table>
 <thead><tr>
-<th style="text-align:left">テーブル</th>
-<th style="text-align:left">特徴</th>
+<th style="text-align:left"></th>
+<th style="text-align:left">横長</th>
+<th style="text-align:left">縦長</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">横長</td>
-<td style="text-align:left">独立変数ごとに1つのレコードを持ちます。したがってメタデータはレコードやカラムのラベル名となります。</td>
+<td style="text-align:left"><strong>特徴</strong></td>
+<td style="text-align:left">メタデータを行ラベルまたは列ラベルに持つ</td>
+<td style="text-align:left">メタデータを RDB のフィールドに持つ</td>
 </tr>
 <tr>
-<td style="text-align:left">縦長</td>
-<td style="text-align:left">ログや観測結果ごとに1つのレコードを持ちます。したがってメタデータも RDB のフィールドに記載されます。</td>
+<td style="text-align:left"><strong>長所</strong></td>
+<td style="text-align:left">テーブルのレコード数を節約できる</td>
+<td style="text-align:left">列ラベルや行ラベルを参照せずともメタデータはわかる</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>短所</strong></td>
+<td style="text-align:left">行ラベルまたは列ラベルを参照しないとメタデータが分からない</td>
+<td style="text-align:left">テーブルのレコード数が長くなる</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>別名</strong></td>
+<td style="text-align:left">雑然（messy）データ</td>
+<td style="text-align:left">整然（tidy）データ</td>
 </tr>
 </tbody>
 </table>
-<p>例えば上記の<code>df</code> は <code>国語</code>、<code>数学</code>、 <code>理科</code>、 <code>社会</code>、 <code>英語</code>という５科目の得点は横長に持たれ、他の <code>学生番号</code>, <code>性別</code>, <code>コース</code> といったメタデータは縦長に持たれています。Altair は <code>.encode()</code> で個々のメタデータに option を割り当てられることから、縦長のテーブルの可視化に適しています。そこで<code>.pandas.melt()</code>を用いて各科目の得点も縦長に持たせましょう。</p>
+<p>例えば上記の<code>df</code> では <code>国語</code>、<code>数学</code>、 <code>理科</code>、 <code>社会</code>、 <code>英語</code>という別々の列にそれぞれの科目の得点が記録されています。そのためそれぞれの値がどの科目の得点なのかは列ラベルを参照しないとわかりません。このようなデータ構造は横長といえます。一方で<code>学生番号</code>や<code>コース</code>、<code>性別</code>などは列ラベルを参照しなくてもわかります。このようなデータ構造は縦長といえます。</p>
+<p>Altair では <code>.encode()</code> や後述の <code>.add_selection()</code>、<code>.transform_XXXXX()</code> などの関数によってレコード1行ごとの値を参照してデータのETL（Extract、Transform、Load）が行われます。この際、列ラベルや行ラベルを参照することはできません。したがって、縦長のデータ構造に変換することによって Altair による可視化のカスタマイズ性は飛躍的に向上します。</p>
+<p>そこで <code>df</code> で横長に持たれている科目ごとの得点を、<code>.pandas.melt()</code>を用いることによって縦長のデータ構造に変換しましょう。</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">long_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">id_vars</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;学生番号&quot;</span><span class="p">,</span> <span class="s2">&quot;性別&quot;</span><span class="p">,</span> <span class="s2">&quot;コース&quot;</span><span class="p">],</span> <span class="n">var_name</span><span class="o">=</span><span class="s2">&quot;科目&quot;</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s2">&quot;得点&quot;</span><span class="p">)</span>
@@ -14081,12 +14452,15 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[9]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<div>
+
+  <div id="df-8631ad2c-1873-41a9-b170-d45ad3efdd24">
+    <div class="colab-df-container">
+      <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
@@ -14204,6 +14578,82 @@ $( document ).ready(function(){
 </table>
 <p>150 rows × 5 columns</p>
 </div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-8631ad2c-1873-41a9-b170-d45ad3efdd24')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-8631ad2c-1873-41a9-b170-d45ad3efdd24 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-8631ad2c-1873-41a9-b170-d45ad3efdd24');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+
 </div>
 
 </div>
@@ -14215,14 +14665,14 @@ $( document ).ready(function(){
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#32294;&#38263;&#12487;&#12540;&#12479;&#12398;&#21487;&#35222;&#21270;&#65288;&#31665;&#12402;&#12370;&#22259;&#65289;">&#32294;&#38263;&#12487;&#12540;&#12479;&#12398;&#21487;&#35222;&#21270;&#65288;&#31665;&#12402;&#12370;&#22259;&#65289;<a class="anchor-link" href="#&#32294;&#38263;&#12487;&#12540;&#12479;&#12398;&#21487;&#35222;&#21270;&#65288;&#31665;&#12402;&#12370;&#22259;&#65289;">&#182;</a></h2><p>科目をメタデータとして持たせることで各科目の得点分布などを可視化することができるようになりました。以下のように箱ひげ図を <code>.mark_boxplot()</code> で作成しましょう。ちなみに　<code>.mark_boxplot()</code> は複数の<code>alt.Chart()</code>を重ね合わせたオブジェクトを返すため、ごく一部の仕様が他の<code>.mark_XXXX()</code>と異なります。</p>
+<h2 id="&#32294;&#38263;&#12487;&#12540;&#12479;&#12398;&#21487;&#35222;&#21270;&#65288;&#31665;&#12402;&#12370;&#22259;&#65289;">&#32294;&#38263;&#12487;&#12540;&#12479;&#12398;&#21487;&#35222;&#21270;&#65288;&#31665;&#12402;&#12370;&#22259;&#65289;<a class="anchor-link" href="#&#32294;&#38263;&#12487;&#12540;&#12479;&#12398;&#21487;&#35222;&#21270;&#65288;&#31665;&#12402;&#12370;&#22259;&#65289;">&#182;</a></h2><p>科目を縦長のデータ構造で持たせることによって科目ごとの得点の集計が可能になりました。例えば科目ごとの得点の中央値や四分位数を集計する際は以下のように箱ひげ図を <code>.mark_boxplot()</code> で作成するとよいでしょう。すなわち X 軸に配置する<code>科目</code>を key に groupby して Y 軸の<code>得点</code>を集計します。ちなみに　<code>.mark_boxplot()</code> は複数の<code>alt.Chart()</code>を重ね合わせたオブジェクトを返すため、一部の仕様が他の<code>.mark_XXXX()</code>と異なります。</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span>
@@ -14256,19 +14706,19 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[10]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-e76b74ca8e9e4991964593211eb4d270"></div>
+<div id="altair-viz-4db1cc444ffc40afb697932cb3a55892"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-e76b74ca8e9e4991964593211eb4d270") {
-      outputDiv = document.getElementById("altair-viz-e76b74ca8e9e4991964593211eb4d270");
+    if (outputDiv.id !== "altair-viz-4db1cc444ffc40afb697932cb3a55892") {
+      outputDiv = document.getElementById("altair-viz-4db1cc444ffc40afb697932cb3a55892");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -14343,7 +14793,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bar_chart</span> <span class="o">=</span> <span class="p">(</span>
@@ -14386,19 +14836,19 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[11]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-00af379c40c7409186a5b14587e23d76"></div>
+<div id="altair-viz-520ced8ccf074b0db81a086845ce295b"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-00af379c40c7409186a5b14587e23d76") {
-      outputDiv = document.getElementById("altair-viz-00af379c40c7409186a5b14587e23d76");
+    if (outputDiv.id !== "altair-viz-520ced8ccf074b0db81a086845ce295b") {
+      outputDiv = document.getElementById("altair-viz-520ced8ccf074b0db81a086845ce295b");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -14472,12 +14922,12 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">error_bar</span> <span class="o">=</span> <span class="p">(</span>
     <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">long_df</span><span class="p">)</span>
-    <span class="o">.</span><span class="n">mark_errorbar</span><span class="p">(</span><span class="n">extent</span><span class="o">=</span><span class="s2">&quot;ci&quot;</span><span class="p">,</span>
+    <span class="o">.</span><span class="n">mark_errorbar</span><span class="p">(</span><span class="n">extent</span><span class="o">=</span><span class="s2">&quot;stderr&quot;</span><span class="p">,</span>
                    <span class="n">clip</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">rule</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
                    <span class="n">ticks</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">MarkConfig</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">),</span>
                   <span class="p">)</span>
@@ -14494,7 +14944,7 @@ $( document ).ready(function(){
         <span class="p">)</span>
     <span class="p">)</span>
 <span class="p">)</span>
-<span class="n">bar_chart</span> <span class="o">+</span> <span class="n">error_bar</span>
+<span class="n">error_bar</span>
 </pre></div>
 
     </div>
@@ -14507,19 +14957,19 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[12]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-394d1bbc7fff420a94469988b0c7aa6d"></div>
+<div id="altair-viz-1eea4ae9a24e4d918df8255e972fad29"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-394d1bbc7fff420a94469988b0c7aa6d") {
-      outputDiv = document.getElementById("altair-viz-394d1bbc7fff420a94469988b0c7aa6d");
+    if (outputDiv.id !== "altair-viz-1eea4ae9a24e4d918df8255e972fad29") {
+      outputDiv = document.getElementById("altair-viz-1eea4ae9a24e4d918df8255e972fad29");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -14565,7 +15015,7 @@ $( document ).ready(function(){
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"axis": {"ticks": true, "grid": true, "labelFont": "Yu Gothic UI", "labelFontSize": 15, "labelAngle": 0, "titleFont": "Yu Gothic UI", "titleFontSize": 18}, "legend": {"labelFont": "Yu Gothic UI", "labelFontSize": 15, "labelAngle": 0, "titleFont": "Yu Gothic UI", "titleFontSize": 18, "titleAngle": 0}, "header": {"labelFont": "Yu Gothic UI", "labelFontSize": 20, "labelAngle": 0, "titleFont": "Yu Gothic UI", "titleFontSize": 25, "titleAngle": 0}, "mark": {"font": "Yu Gothic UI"}, "title": {"font": "Yu Gothic UI", "subtitleFont": "Yu Gothic UI"}, "view": {"width": 300, "height": 300}, "background": "white"}, "layer": [{"mark": "bar", "encoding": {"color": {"field": "\u79d1\u76ee", "scale": {"domain": ["\u56fd\u8a9e", "\u6570\u5b66", "\u7406\u79d1", "\u793e\u4f1a", "\u82f1\u8a9e"], "range": ["brown", "steelblue", "orange", "green", "purple"]}, "type": "nominal"}, "tooltip": [{"aggregate": "mean", "field": "\u5f97\u70b9", "format": ".2f"}, {"field": "\u79d1\u76ee"}], "x": {"axis": {"title": "5\u6559\u79d1"}, "field": "\u79d1\u76ee", "sort": ["\u56fd\u8a9e", "\u6570\u5b66", "\u7406\u79d1", "\u793e\u4f1a", "\u82f1\u8a9e"], "type": "nominal"}, "y": {"aggregate": "mean", "axis": {"title": "\u5e73\u5747\u70b9"}, "field": "\u5f97\u70b9", "scale": {"domain": [0, 100]}, "type": "quantitative"}}}, {"mark": {"type": "errorbar", "clip": true, "extent": "ci", "rule": true, "size": 100, "ticks": {"color": "black", "width": 20}}, "encoding": {"x": {"axis": {"title": "5\u6559\u79d1"}, "field": "\u79d1\u76ee", "sort": ["\u56fd\u8a9e", "\u6570\u5b66", "\u7406\u79d1", "\u793e\u4f1a", "\u82f1\u8a9e"], "type": "nominal"}, "y": {"axis": {"title": "\u5e73\u5747\u70b9"}, "field": "\u5f97\u70b9", "scale": {"domain": [0, 100]}, "type": "quantitative"}}}], "data": {"name": "data-cb38e1ae7e5d0f4e2292037944499959"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "datasets": {"data-cb38e1ae7e5d0f4e2292037944499959": [{"\u5b66\u751f\u756a\u53f7": "ID01", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 18}, {"\u5b66\u751f\u756a\u53f7": "ID02", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 47}, {"\u5b66\u751f\u756a\u53f7": "ID03", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 32}, {"\u5b66\u751f\u756a\u53f7": "ID04", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 64}, {"\u5b66\u751f\u756a\u53f7": "ID05", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 21}, {"\u5b66\u751f\u756a\u53f7": "ID06", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 47}, {"\u5b66\u751f\u756a\u53f7": "ID07", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 77}, {"\u5b66\u751f\u756a\u53f7": "ID08", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 70}, {"\u5b66\u751f\u756a\u53f7": "ID09", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 57}, {"\u5b66\u751f\u756a\u53f7": "ID10", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 33}, {"\u5b66\u751f\u756a\u53f7": "ID11", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 45}, {"\u5b66\u751f\u756a\u53f7": "ID12", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 35}, {"\u5b66\u751f\u756a\u53f7": "ID13", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 30}, {"\u5b66\u751f\u756a\u53f7": "ID14", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 46}, {"\u5b66\u751f\u756a\u53f7": "ID15", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 79}, {"\u5b66\u751f\u756a\u53f7": "ID16", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 60}, {"\u5b66\u751f\u756a\u53f7": "ID17", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 43}, {"\u5b66\u751f\u756a\u53f7": "ID18", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 31}, {"\u5b66\u751f\u756a\u53f7": "ID19", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 91}, {"\u5b66\u751f\u756a\u53f7": "ID20", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 100}, {"\u5b66\u751f\u756a\u53f7": "ID21", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 48}, {"\u5b66\u751f\u756a\u53f7": "ID22", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 56}, {"\u5b66\u751f\u756a\u53f7": "ID23", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 29}, {"\u5b66\u751f\u756a\u53f7": "ID24", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 100}, {"\u5b66\u751f\u756a\u53f7": "ID25", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 30}, {"\u5b66\u751f\u756a\u53f7": "ID26", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 13}, {"\u5b66\u751f\u756a\u53f7": "ID27", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 21}, {"\u5b66\u751f\u756a\u53f7": "ID28", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 57}, {"\u5b66\u751f\u756a\u53f7": "ID29", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 40}, {"\u5b66\u751f\u756a\u53f7": "ID30", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 54}, {"\u5b66\u751f\u756a\u53f7": "ID01", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 7}, {"\u5b66\u751f\u756a\u53f7": "ID02", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 34}, {"\u5b66\u751f\u756a\u53f7": "ID03", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 39}, {"\u5b66\u751f\u756a\u53f7": "ID04", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 34}, {"\u5b66\u751f\u756a\u53f7": "ID05", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 41}, {"\u5b66\u751f\u756a\u53f7": "ID06", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 41}, {"\u5b66\u751f\u756a\u53f7": "ID07", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 58}, {"\u5b66\u751f\u756a\u53f7": "ID08", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 47}, {"\u5b66\u751f\u756a\u53f7": "ID09", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 43}, {"\u5b66\u751f\u756a\u53f7": "ID10", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 48}, {"\u5b66\u751f\u756a\u53f7": "ID11", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 58}, {"\u5b66\u751f\u756a\u53f7": "ID12", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 49}, {"\u5b66\u751f\u756a\u53f7": "ID13", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 37}, {"\u5b66\u751f\u756a\u53f7": "ID14", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 49}, {"\u5b66\u751f\u756a\u53f7": "ID15", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 63}, {"\u5b66\u751f\u756a\u53f7": "ID16", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 43}, {"\u5b66\u751f\u756a\u53f7": "ID17", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 36}, {"\u5b66\u751f\u756a\u53f7": "ID18", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 37}, {"\u5b66\u751f\u756a\u53f7": "ID19", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 64}, {"\u5b66\u751f\u756a\u53f7": "ID20", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 90}, {"\u5b66\u751f\u756a\u53f7": "ID21", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 49}, {"\u5b66\u751f\u756a\u53f7": "ID22", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 63}, {"\u5b66\u751f\u756a\u53f7": "ID23", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 26}, {"\u5b66\u751f\u756a\u53f7": "ID24", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 85}, {"\u5b66\u751f\u756a\u53f7": "ID25", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 33}, {"\u5b66\u751f\u756a\u53f7": "ID26", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 15}, {"\u5b66\u751f\u756a\u53f7": "ID27", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 17}, {"\u5b66\u751f\u756a\u53f7": "ID28", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 60}, {"\u5b66\u751f\u756a\u53f7": "ID29", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 36}, {"\u5b66\u751f\u756a\u53f7": "ID30", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 46}, {"\u5b66\u751f\u756a\u53f7": "ID01", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 15}, {"\u5b66\u751f\u756a\u53f7": "ID02", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 49}, {"\u5b66\u751f\u756a\u53f7": "ID03", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 41}, {"\u5b66\u751f\u756a\u53f7": "ID04", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 68}, {"\u5b66\u751f\u756a\u53f7": "ID05", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 45}, {"\u5b66\u751f\u756a\u53f7": "ID06", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 56}, {"\u5b66\u751f\u756a\u53f7": "ID07", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 60}, {"\u5b66\u751f\u756a\u53f7": "ID08", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 74}, {"\u5b66\u751f\u756a\u53f7": "ID09", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 49}, {"\u5b66\u751f\u756a\u53f7": "ID10", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 53}, {"\u5b66\u751f\u756a\u53f7": "ID11", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 47}, {"\u5b66\u751f\u756a\u53f7": "ID12", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 51}, {"\u5b66\u751f\u756a\u53f7": "ID13", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 41}, {"\u5b66\u751f\u756a\u53f7": "ID14", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 50}, {"\u5b66\u751f\u756a\u53f7": "ID15", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 96}, {"\u5b66\u751f\u756a\u53f7": "ID16", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 58}, {"\u5b66\u751f\u756a\u53f7": "ID17", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 36}, {"\u5b66\u751f\u756a\u53f7": "ID18", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 40}, {"\u5b66\u751f\u756a\u53f7": "ID19", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 84}, {"\u5b66\u751f\u756a\u53f7": "ID20", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 100}, {"\u5b66\u751f\u756a\u53f7": "ID21", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 57}, {"\u5b66\u751f\u756a\u53f7": "ID22", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 55}, {"\u5b66\u751f\u756a\u53f7": "ID23", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 36}, {"\u5b66\u751f\u756a\u53f7": "ID24", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 90}, {"\u5b66\u751f\u756a\u53f7": "ID25", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 37}, {"\u5b66\u751f\u756a\u53f7": "ID26", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 20}, {"\u5b66\u751f\u756a\u53f7": "ID27", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 24}, {"\u5b66\u751f\u756a\u53f7": "ID28", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 58}, {"\u5b66\u751f\u756a\u53f7": "ID29", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 42}, {"\u5b66\u751f\u756a\u53f7": "ID30", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 47}, {"\u5b66\u751f\u756a\u53f7": "ID01", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 17}, {"\u5b66\u751f\u756a\u53f7": "ID02", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 57}, {"\u5b66\u751f\u756a\u53f7": "ID03", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 42}, {"\u5b66\u751f\u756a\u53f7": "ID04", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 71}, {"\u5b66\u751f\u756a\u53f7": "ID05", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 51}, {"\u5b66\u751f\u756a\u53f7": "ID06", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 64}, {"\u5b66\u751f\u756a\u53f7": "ID07", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 69}, {"\u5b66\u751f\u756a\u53f7": "ID08", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 80}, {"\u5b66\u751f\u756a\u53f7": "ID09", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 58}, {"\u5b66\u751f\u756a\u53f7": "ID10", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 61}, {"\u5b66\u751f\u756a\u53f7": "ID11", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 54}, {"\u5b66\u751f\u756a\u53f7": "ID12", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 67}, {"\u5b66\u751f\u756a\u53f7": "ID13", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 48}, {"\u5b66\u751f\u756a\u53f7": "ID14", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 53}, {"\u5b66\u751f\u756a\u53f7": "ID15", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 93}, {"\u5b66\u751f\u756a\u53f7": "ID16", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 66}, {"\u5b66\u751f\u756a\u53f7": "ID17", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 42}, {"\u5b66\u751f\u756a\u53f7": "ID18", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 44}, {"\u5b66\u751f\u756a\u53f7": "ID19", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 96}, {"\u5b66\u751f\u756a\u53f7": "ID20", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 100}, {"\u5b66\u751f\u756a\u53f7": "ID21", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 68}, {"\u5b66\u751f\u756a\u53f7": "ID22", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 64}, {"\u5b66\u751f\u756a\u53f7": "ID23", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 38}, {"\u5b66\u751f\u756a\u53f7": "ID24", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 95}, {"\u5b66\u751f\u756a\u53f7": "ID25", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 41}, {"\u5b66\u751f\u756a\u53f7": "ID26", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 19}, {"\u5b66\u751f\u756a\u53f7": "ID27", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 26}, {"\u5b66\u751f\u756a\u53f7": "ID28", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 61}, {"\u5b66\u751f\u756a\u53f7": "ID29", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 47}, {"\u5b66\u751f\u756a\u53f7": "ID30", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 55}, {"\u5b66\u751f\u756a\u53f7": "ID01", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 11}, {"\u5b66\u751f\u756a\u53f7": "ID02", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 80}, {"\u5b66\u751f\u756a\u53f7": "ID03", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 42}, {"\u5b66\u751f\u756a\u53f7": "ID04", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 54}, {"\u5b66\u751f\u756a\u53f7": "ID05", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 47}, {"\u5b66\u751f\u756a\u53f7": "ID06", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 75}, {"\u5b66\u751f\u756a\u53f7": "ID07", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 74}, {"\u5b66\u751f\u756a\u53f7": "ID08", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 46}, {"\u5b66\u751f\u756a\u53f7": "ID09", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 40}, {"\u5b66\u751f\u756a\u53f7": "ID10", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 76}, {"\u5b66\u751f\u756a\u53f7": "ID11", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 45}, {"\u5b66\u751f\u756a\u53f7": "ID12", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 46}, {"\u5b66\u751f\u756a\u53f7": "ID13", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 48}, {"\u5b66\u751f\u756a\u53f7": "ID14", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 50}, {"\u5b66\u751f\u756a\u53f7": "ID15", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 88}, {"\u5b66\u751f\u756a\u53f7": "ID16", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 56}, {"\u5b66\u751f\u756a\u53f7": "ID17", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 47}, {"\u5b66\u751f\u756a\u53f7": "ID18", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 55}, {"\u5b66\u751f\u756a\u53f7": "ID19", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 96}, {"\u5b66\u751f\u756a\u53f7": "ID20", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 100}, {"\u5b66\u751f\u756a\u53f7": "ID21", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 44}, {"\u5b66\u751f\u756a\u53f7": "ID22", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 45}, {"\u5b66\u751f\u756a\u53f7": "ID23", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 32}, {"\u5b66\u751f\u756a\u53f7": "ID24", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 100}, {"\u5b66\u751f\u756a\u53f7": "ID25", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 35}, {"\u5b66\u751f\u756a\u53f7": "ID26", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 24}, {"\u5b66\u751f\u756a\u53f7": "ID27", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 15}, {"\u5b66\u751f\u756a\u53f7": "ID28", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 43}, {"\u5b66\u751f\u756a\u53f7": "ID29", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 45}, {"\u5b66\u751f\u756a\u53f7": "ID30", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 47}]}}, {"mode": "vega-lite"});
+  })({"config": {"axis": {"ticks": true, "grid": true, "labelFont": "Yu Gothic UI", "labelFontSize": 15, "labelAngle": 0, "titleFont": "Yu Gothic UI", "titleFontSize": 18}, "legend": {"labelFont": "Yu Gothic UI", "labelFontSize": 15, "labelAngle": 0, "titleFont": "Yu Gothic UI", "titleFontSize": 18, "titleAngle": 0}, "header": {"labelFont": "Yu Gothic UI", "labelFontSize": 20, "labelAngle": 0, "titleFont": "Yu Gothic UI", "titleFontSize": 25, "titleAngle": 0}, "mark": {"font": "Yu Gothic UI"}, "title": {"font": "Yu Gothic UI", "subtitleFont": "Yu Gothic UI"}, "view": {"width": 300, "height": 300}, "background": "white"}, "data": {"name": "data-cb38e1ae7e5d0f4e2292037944499959"}, "mark": {"type": "errorbar", "clip": true, "extent": "stderr", "rule": true, "size": 100, "ticks": {"color": "black", "width": 20}}, "encoding": {"x": {"axis": {"title": "5\u6559\u79d1"}, "field": "\u79d1\u76ee", "sort": ["\u56fd\u8a9e", "\u6570\u5b66", "\u7406\u79d1", "\u793e\u4f1a", "\u82f1\u8a9e"], "type": "nominal"}, "y": {"axis": {"title": "\u5e73\u5747\u70b9"}, "field": "\u5f97\u70b9", "scale": {"domain": [0, 100]}, "type": "quantitative"}}, "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "datasets": {"data-cb38e1ae7e5d0f4e2292037944499959": [{"\u5b66\u751f\u756a\u53f7": "ID01", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 18}, {"\u5b66\u751f\u756a\u53f7": "ID02", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 47}, {"\u5b66\u751f\u756a\u53f7": "ID03", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 32}, {"\u5b66\u751f\u756a\u53f7": "ID04", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 64}, {"\u5b66\u751f\u756a\u53f7": "ID05", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 21}, {"\u5b66\u751f\u756a\u53f7": "ID06", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 47}, {"\u5b66\u751f\u756a\u53f7": "ID07", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 77}, {"\u5b66\u751f\u756a\u53f7": "ID08", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 70}, {"\u5b66\u751f\u756a\u53f7": "ID09", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 57}, {"\u5b66\u751f\u756a\u53f7": "ID10", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 33}, {"\u5b66\u751f\u756a\u53f7": "ID11", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 45}, {"\u5b66\u751f\u756a\u53f7": "ID12", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 35}, {"\u5b66\u751f\u756a\u53f7": "ID13", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 30}, {"\u5b66\u751f\u756a\u53f7": "ID14", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 46}, {"\u5b66\u751f\u756a\u53f7": "ID15", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 79}, {"\u5b66\u751f\u756a\u53f7": "ID16", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 60}, {"\u5b66\u751f\u756a\u53f7": "ID17", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 43}, {"\u5b66\u751f\u756a\u53f7": "ID18", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 31}, {"\u5b66\u751f\u756a\u53f7": "ID19", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 91}, {"\u5b66\u751f\u756a\u53f7": "ID20", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 100}, {"\u5b66\u751f\u756a\u53f7": "ID21", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 48}, {"\u5b66\u751f\u756a\u53f7": "ID22", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 56}, {"\u5b66\u751f\u756a\u53f7": "ID23", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 29}, {"\u5b66\u751f\u756a\u53f7": "ID24", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 100}, {"\u5b66\u751f\u756a\u53f7": "ID25", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 30}, {"\u5b66\u751f\u756a\u53f7": "ID26", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 13}, {"\u5b66\u751f\u756a\u53f7": "ID27", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 21}, {"\u5b66\u751f\u756a\u53f7": "ID28", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 57}, {"\u5b66\u751f\u756a\u53f7": "ID29", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 40}, {"\u5b66\u751f\u756a\u53f7": "ID30", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u56fd\u8a9e", "\u5f97\u70b9": 54}, {"\u5b66\u751f\u756a\u53f7": "ID01", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 7}, {"\u5b66\u751f\u756a\u53f7": "ID02", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 34}, {"\u5b66\u751f\u756a\u53f7": "ID03", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 39}, {"\u5b66\u751f\u756a\u53f7": "ID04", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 34}, {"\u5b66\u751f\u756a\u53f7": "ID05", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 41}, {"\u5b66\u751f\u756a\u53f7": "ID06", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 41}, {"\u5b66\u751f\u756a\u53f7": "ID07", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 58}, {"\u5b66\u751f\u756a\u53f7": "ID08", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 47}, {"\u5b66\u751f\u756a\u53f7": "ID09", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 43}, {"\u5b66\u751f\u756a\u53f7": "ID10", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 48}, {"\u5b66\u751f\u756a\u53f7": "ID11", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 58}, {"\u5b66\u751f\u756a\u53f7": "ID12", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 49}, {"\u5b66\u751f\u756a\u53f7": "ID13", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 37}, {"\u5b66\u751f\u756a\u53f7": "ID14", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 49}, {"\u5b66\u751f\u756a\u53f7": "ID15", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 63}, {"\u5b66\u751f\u756a\u53f7": "ID16", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 43}, {"\u5b66\u751f\u756a\u53f7": "ID17", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 36}, {"\u5b66\u751f\u756a\u53f7": "ID18", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 37}, {"\u5b66\u751f\u756a\u53f7": "ID19", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 64}, {"\u5b66\u751f\u756a\u53f7": "ID20", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 90}, {"\u5b66\u751f\u756a\u53f7": "ID21", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 49}, {"\u5b66\u751f\u756a\u53f7": "ID22", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 63}, {"\u5b66\u751f\u756a\u53f7": "ID23", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 26}, {"\u5b66\u751f\u756a\u53f7": "ID24", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 85}, {"\u5b66\u751f\u756a\u53f7": "ID25", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 33}, {"\u5b66\u751f\u756a\u53f7": "ID26", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 15}, {"\u5b66\u751f\u756a\u53f7": "ID27", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 17}, {"\u5b66\u751f\u756a\u53f7": "ID28", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 60}, {"\u5b66\u751f\u756a\u53f7": "ID29", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 36}, {"\u5b66\u751f\u756a\u53f7": "ID30", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u6570\u5b66", "\u5f97\u70b9": 46}, {"\u5b66\u751f\u756a\u53f7": "ID01", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 15}, {"\u5b66\u751f\u756a\u53f7": "ID02", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 49}, {"\u5b66\u751f\u756a\u53f7": "ID03", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 41}, {"\u5b66\u751f\u756a\u53f7": "ID04", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 68}, {"\u5b66\u751f\u756a\u53f7": "ID05", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 45}, {"\u5b66\u751f\u756a\u53f7": "ID06", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 56}, {"\u5b66\u751f\u756a\u53f7": "ID07", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 60}, {"\u5b66\u751f\u756a\u53f7": "ID08", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 74}, {"\u5b66\u751f\u756a\u53f7": "ID09", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 49}, {"\u5b66\u751f\u756a\u53f7": "ID10", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 53}, {"\u5b66\u751f\u756a\u53f7": "ID11", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 47}, {"\u5b66\u751f\u756a\u53f7": "ID12", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 51}, {"\u5b66\u751f\u756a\u53f7": "ID13", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 41}, {"\u5b66\u751f\u756a\u53f7": "ID14", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 50}, {"\u5b66\u751f\u756a\u53f7": "ID15", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 96}, {"\u5b66\u751f\u756a\u53f7": "ID16", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 58}, {"\u5b66\u751f\u756a\u53f7": "ID17", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 36}, {"\u5b66\u751f\u756a\u53f7": "ID18", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 40}, {"\u5b66\u751f\u756a\u53f7": "ID19", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 84}, {"\u5b66\u751f\u756a\u53f7": "ID20", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 100}, {"\u5b66\u751f\u756a\u53f7": "ID21", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 57}, {"\u5b66\u751f\u756a\u53f7": "ID22", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 55}, {"\u5b66\u751f\u756a\u53f7": "ID23", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 36}, {"\u5b66\u751f\u756a\u53f7": "ID24", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 90}, {"\u5b66\u751f\u756a\u53f7": "ID25", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 37}, {"\u5b66\u751f\u756a\u53f7": "ID26", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 20}, {"\u5b66\u751f\u756a\u53f7": "ID27", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 24}, {"\u5b66\u751f\u756a\u53f7": "ID28", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 58}, {"\u5b66\u751f\u756a\u53f7": "ID29", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 42}, {"\u5b66\u751f\u756a\u53f7": "ID30", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u7406\u79d1", "\u5f97\u70b9": 47}, {"\u5b66\u751f\u756a\u53f7": "ID01", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 17}, {"\u5b66\u751f\u756a\u53f7": "ID02", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 57}, {"\u5b66\u751f\u756a\u53f7": "ID03", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 42}, {"\u5b66\u751f\u756a\u53f7": "ID04", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 71}, {"\u5b66\u751f\u756a\u53f7": "ID05", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 51}, {"\u5b66\u751f\u756a\u53f7": "ID06", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 64}, {"\u5b66\u751f\u756a\u53f7": "ID07", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 69}, {"\u5b66\u751f\u756a\u53f7": "ID08", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 80}, {"\u5b66\u751f\u756a\u53f7": "ID09", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 58}, {"\u5b66\u751f\u756a\u53f7": "ID10", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 61}, {"\u5b66\u751f\u756a\u53f7": "ID11", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 54}, {"\u5b66\u751f\u756a\u53f7": "ID12", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 67}, {"\u5b66\u751f\u756a\u53f7": "ID13", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 48}, {"\u5b66\u751f\u756a\u53f7": "ID14", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 53}, {"\u5b66\u751f\u756a\u53f7": "ID15", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 93}, {"\u5b66\u751f\u756a\u53f7": "ID16", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 66}, {"\u5b66\u751f\u756a\u53f7": "ID17", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 42}, {"\u5b66\u751f\u756a\u53f7": "ID18", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 44}, {"\u5b66\u751f\u756a\u53f7": "ID19", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 96}, {"\u5b66\u751f\u756a\u53f7": "ID20", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 100}, {"\u5b66\u751f\u756a\u53f7": "ID21", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 68}, {"\u5b66\u751f\u756a\u53f7": "ID22", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 64}, {"\u5b66\u751f\u756a\u53f7": "ID23", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 38}, {"\u5b66\u751f\u756a\u53f7": "ID24", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 95}, {"\u5b66\u751f\u756a\u53f7": "ID25", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 41}, {"\u5b66\u751f\u756a\u53f7": "ID26", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 19}, {"\u5b66\u751f\u756a\u53f7": "ID27", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 26}, {"\u5b66\u751f\u756a\u53f7": "ID28", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 61}, {"\u5b66\u751f\u756a\u53f7": "ID29", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 47}, {"\u5b66\u751f\u756a\u53f7": "ID30", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u793e\u4f1a", "\u5f97\u70b9": 55}, {"\u5b66\u751f\u756a\u53f7": "ID01", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 11}, {"\u5b66\u751f\u756a\u53f7": "ID02", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 80}, {"\u5b66\u751f\u756a\u53f7": "ID03", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 42}, {"\u5b66\u751f\u756a\u53f7": "ID04", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 54}, {"\u5b66\u751f\u756a\u53f7": "ID05", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 47}, {"\u5b66\u751f\u756a\u53f7": "ID06", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 75}, {"\u5b66\u751f\u756a\u53f7": "ID07", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 74}, {"\u5b66\u751f\u756a\u53f7": "ID08", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 46}, {"\u5b66\u751f\u756a\u53f7": "ID09", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 40}, {"\u5b66\u751f\u756a\u53f7": "ID10", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 76}, {"\u5b66\u751f\u756a\u53f7": "ID11", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 45}, {"\u5b66\u751f\u756a\u53f7": "ID12", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 46}, {"\u5b66\u751f\u756a\u53f7": "ID13", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 48}, {"\u5b66\u751f\u756a\u53f7": "ID14", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 50}, {"\u5b66\u751f\u756a\u53f7": "ID15", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 88}, {"\u5b66\u751f\u756a\u53f7": "ID16", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 56}, {"\u5b66\u751f\u756a\u53f7": "ID17", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 47}, {"\u5b66\u751f\u756a\u53f7": "ID18", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 55}, {"\u5b66\u751f\u756a\u53f7": "ID19", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 96}, {"\u5b66\u751f\u756a\u53f7": "ID20", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 100}, {"\u5b66\u751f\u756a\u53f7": "ID21", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 44}, {"\u5b66\u751f\u756a\u53f7": "ID22", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 45}, {"\u5b66\u751f\u756a\u53f7": "ID23", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 32}, {"\u5b66\u751f\u756a\u53f7": "ID24", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 100}, {"\u5b66\u751f\u756a\u53f7": "ID25", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 35}, {"\u5b66\u751f\u756a\u53f7": "ID26", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u7406\u6570", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 24}, {"\u5b66\u751f\u756a\u53f7": "ID27", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 15}, {"\u5b66\u751f\u756a\u53f7": "ID28", "\u6027\u5225": "\u7537", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 43}, {"\u5b66\u751f\u756a\u53f7": "ID29", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u666e\u901a", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 45}, {"\u5b66\u751f\u756a\u53f7": "ID30", "\u6027\u5225": "\u5973", "\u30b3\u30fc\u30b9": "\u7279\u9032", "\u79d1\u76ee": "\u82f1\u8a9e", "\u5f97\u70b9": 47}]}}, {"mode": "vega-lite"});
 </script>
 </div>
 
@@ -14585,7 +15035,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span>
@@ -14630,19 +15080,19 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[13]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-888639127af64792ad0db72cdace69b7"></div>
+<div id="altair-viz-26dc1ac12d0a4b438b2efafd1ebf972b"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-888639127af64792ad0db72cdace69b7") {
-      outputDiv = document.getElementById("altair-viz-888639127af64792ad0db72cdace69b7");
+    if (outputDiv.id !== "altair-viz-26dc1ac12d0a4b438b2efafd1ebf972b") {
+      outputDiv = document.getElementById("altair-viz-26dc1ac12d0a4b438b2efafd1ebf972b");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -14708,7 +15158,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span>
@@ -14746,19 +15196,19 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[14]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-ba069e3586fd4596aa3e493eae4ffa24"></div>
+<div id="altair-viz-3c79af0deef149b8bf9d0d6a088e1e15"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-ba069e3586fd4596aa3e493eae4ffa24") {
-      outputDiv = document.getElementById("altair-viz-ba069e3586fd4596aa3e493eae4ffa24");
+    if (outputDiv.id !== "altair-viz-3c79af0deef149b8bf9d0d6a088e1e15") {
+      outputDiv = document.getElementById("altair-viz-3c79af0deef149b8bf9d0d6a088e1e15");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -14824,7 +15274,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span>
@@ -14861,19 +15311,19 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[15]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-3b74764fe0a04e44a89977935c3d478d"></div>
+<div id="altair-viz-864fac764f004a4aaa63acce71b72530"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-3b74764fe0a04e44a89977935c3d478d") {
-      outputDiv = document.getElementById("altair-viz-3b74764fe0a04e44a89977935c3d478d");
+    if (outputDiv.id !== "altair-viz-864fac764f004a4aaa63acce71b72530") {
+      outputDiv = document.getElementById("altair-viz-864fac764f004a4aaa63acce71b72530");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -14939,7 +15389,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span>
@@ -14980,19 +15430,19 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[16]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-fce9f393f1ea44c8ac27a7ed53b03816"></div>
+<div id="altair-viz-327773613fa947668d3a0eccb8ffb712"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-fce9f393f1ea44c8ac27a7ed53b03816") {
-      outputDiv = document.getElementById("altair-viz-fce9f393f1ea44c8ac27a7ed53b03816");
+    if (outputDiv.id !== "altair-viz-327773613fa947668d3a0eccb8ffb712") {
+      outputDiv = document.getElementById("altair-viz-327773613fa947668d3a0eccb8ffb712");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -15058,7 +15508,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span>
@@ -15102,19 +15552,19 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[17]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-c348580aa6b842198cb498840ffde5cd"></div>
+<div id="altair-viz-4cd2e501fe874faa872dc4d7553125bf"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-c348580aa6b842198cb498840ffde5cd") {
-      outputDiv = document.getElementById("altair-viz-c348580aa6b842198cb498840ffde5cd");
+    if (outputDiv.id !== "altair-viz-4cd2e501fe874faa872dc4d7553125bf") {
+      outputDiv = document.getElementById("altair-viz-4cd2e501fe874faa872dc4d7553125bf");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -15180,7 +15630,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span>
@@ -15213,19 +15663,19 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[18]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-6fde5d6c48504dbd8e20ba73a89fffe7"></div>
+<div id="altair-viz-1767ab42744e4c80bc0be100ae196bed"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-6fde5d6c48504dbd8e20ba73a89fffe7") {
-      outputDiv = document.getElementById("altair-viz-6fde5d6c48504dbd8e20ba73a89fffe7");
+    if (outputDiv.id !== "altair-viz-1767ab42744e4c80bc0be100ae196bed") {
+      outputDiv = document.getElementById("altair-viz-1767ab42744e4c80bc0be100ae196bed");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -15291,7 +15741,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span>
@@ -15324,19 +15774,19 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[19]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-34257c4cf24545909d744711407445a3"></div>
+<div id="altair-viz-48f5cb7c16b34b34b413a1e3aa3a9b56"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-34257c4cf24545909d744711407445a3") {
-      outputDiv = document.getElementById("altair-viz-34257c4cf24545909d744711407445a3");
+    if (outputDiv.id !== "altair-viz-48f5cb7c16b34b34b413a1e3aa3a9b56") {
+      outputDiv = document.getElementById("altair-viz-48f5cb7c16b34b34b413a1e3aa3a9b56");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -15402,7 +15852,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span>
@@ -15439,19 +15889,19 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[20]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-b9a643011b5749249b98b001b04110bf"></div>
+<div id="altair-viz-d25a5944e2144e9394c4fe937cdaf0e8"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-b9a643011b5749249b98b001b04110bf") {
-      outputDiv = document.getElementById("altair-viz-b9a643011b5749249b98b001b04110bf");
+    if (outputDiv.id !== "altair-viz-d25a5944e2144e9394c4fe937cdaf0e8") {
+      outputDiv = document.getElementById("altair-viz-d25a5944e2144e9394c4fe937cdaf0e8");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -15510,14 +15960,14 @@ $( document ).ready(function(){
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#26465;&#20214;&#24335;&#12395;&#12424;&#12427;&#20998;&#23696;">&#26465;&#20214;&#24335;&#12395;&#12424;&#12427;&#20998;&#23696;<a class="anchor-link" href="#&#26465;&#20214;&#24335;&#12395;&#12424;&#12427;&#20998;&#23696;">&#182;</a></h2><p><code>.encode()</code> は条件式によってレコードごとに処理を変えられる option を引数としてとれます。この if 文は <code>alt.Condition()</code> の引数 <code>predicate</code> でとれます。<code>alt.Condition()</code> を引数としてとれる option として　<code>color</code>、<code>size</code>、<code>opacity</code> などがあります。</p>
+<h2 id="&#26465;&#20214;&#24335;&#12395;&#12424;&#12427;&#20998;&#23696;">&#26465;&#20214;&#24335;&#12395;&#12424;&#12427;&#20998;&#23696;<a class="anchor-link" href="#&#26465;&#20214;&#24335;&#12395;&#12424;&#12427;&#20998;&#23696;">&#182;</a></h2><p><code>.encode()</code> の channel には条件式（すなわち if 文）によってレコードごとに処理を変えられるものもあります。この if 文は <code>alt.condition()</code> の引数 <code>predicate</code> でとれます。<code>alt.Condition()</code> を渡すことができる channel として　<code>color</code>、<code>size</code>、<code>opacity</code> などがあります。</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span>
@@ -15559,19 +16009,19 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[21]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-f32603b54ced442598a387d42cc79c5b"></div>
+<div id="altair-viz-7847defc606d49388577bcd02e3aff0b"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-f32603b54ced442598a387d42cc79c5b") {
-      outputDiv = document.getElementById("altair-viz-f32603b54ced442598a387d42cc79c5b");
+    if (outputDiv.id !== "altair-viz-7847defc606d49388577bcd02e3aff0b") {
+      outputDiv = document.getElementById("altair-viz-7847defc606d49388577bcd02e3aff0b");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -15630,7 +16080,7 @@ $( document ).ready(function(){
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#12452;&#12531;&#12479;&#12521;&#12463;&#12486;&#12451;&#12502;&#12394;&#26465;&#20214;&#24335;&#12398;&#22793;&#26356;">&#12452;&#12531;&#12479;&#12521;&#12463;&#12486;&#12451;&#12502;&#12394;&#26465;&#20214;&#24335;&#12398;&#22793;&#26356;<a class="anchor-link" href="#&#12452;&#12531;&#12479;&#12521;&#12463;&#12486;&#12451;&#12502;&#12394;&#26465;&#20214;&#24335;&#12398;&#22793;&#26356;">&#182;</a></h2><p><code>alt.Condition()</code> や <code>.transform_filter()</code> の引数である条件式は リアルタイムのカーソルの動きによって変更可能です。この条件式を変更させることができるオブジェクトが<code>alt.selection()</code> です。このオブジェクトは<code>alt.Chart()</code> のメソッドである<code>.add_selection()</code>の引数です。</p>
+<h2 id="&#12452;&#12531;&#12479;&#12521;&#12463;&#12486;&#12451;&#12502;&#12394;&#26465;&#20214;&#24335;&#12398;&#22793;&#26356;">&#12452;&#12531;&#12479;&#12521;&#12463;&#12486;&#12451;&#12502;&#12394;&#26465;&#20214;&#24335;&#12398;&#22793;&#26356;<a class="anchor-link" href="#&#12452;&#12531;&#12479;&#12521;&#12463;&#12486;&#12451;&#12502;&#12394;&#26465;&#20214;&#24335;&#12398;&#22793;&#26356;">&#182;</a></h2><p><code>alt.condition()</code> や <code>.transform_filter()</code> の引数である条件式は リアルタイムのカーソルの動きによって変更可能です。この条件式を変更させることができるオブジェクトが<code>alt.selection()</code> です。このオブジェクトは<code>alt.Chart()</code> のメソッドである<code>.add_selection()</code>の引数です。</p>
 <h3 id="Binding-&#12395;&#12424;&#12427;&#22793;&#26356;">Binding &#12395;&#12424;&#12427;&#22793;&#26356;<a class="anchor-link" href="#Binding-&#12395;&#12424;&#12427;&#22793;&#26356;">&#182;</a></h3><h4 id="alt.Condition()">alt.Condition()<a class="anchor-link" href="#alt.Condition()">&#182;</a></h4><p><code>alt.selection()</code> は、図の効果によってユーザーの変更を受けとるものと、プルダウンやスライダーといった別のオブジェクトの変更を受けとるものがあります。後者の場合 <a href="https://altair-viz.github.io/user_guide/interactions.html#binding-adding-data-driven-inputs">binding</a> すなわち <code>alt.binding()</code> を引数にとります。</p>
 
 </div>
@@ -15638,12 +16088,12 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">score_slider</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">binding_range</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;score:&quot;</span><span class="p">)</span>
-<span class="n">score_selection</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection_single</span><span class="p">(</span>
-    <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;合格点&quot;</span><span class="p">],</span> <span class="n">bind</span><span class="o">=</span><span class="n">score_slider</span><span class="p">,</span> <span class="n">init</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;合格点&quot;</span><span class="p">:</span> <span class="mi">50</span><span class="p">}</span>
+<span class="n">score_selection</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection</span><span class="p">(</span>
+    <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;single&quot;</span> <span class="p">,</span><span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;合格点&quot;</span><span class="p">],</span> <span class="n">bind</span><span class="o">=</span><span class="n">score_slider</span><span class="p">,</span> <span class="n">init</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;合格点&quot;</span><span class="p">:</span> <span class="mi">50</span><span class="p">}</span>
 <span class="p">)</span>
 
 <span class="p">(</span>
@@ -15686,19 +16136,19 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[22]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-c9117516993d410fbf5687101341aaf5"></div>
+<div id="altair-viz-39e08ef5e0c94c8bb2bb6e1ada13ef67"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-c9117516993d410fbf5687101341aaf5") {
-      outputDiv = document.getElementById("altair-viz-c9117516993d410fbf5687101341aaf5");
+    if (outputDiv.id !== "altair-viz-39e08ef5e0c94c8bb2bb6e1ada13ef67") {
+      outputDiv = document.getElementById("altair-viz-39e08ef5e0c94c8bb2bb6e1ada13ef67");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -15764,12 +16214,12 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">subject_dropdown</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">binding_select</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="n">sub</span><span class="p">)</span>
-<span class="n">subject_selection</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection_single</span><span class="p">(</span>
-    <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;科目&quot;</span><span class="p">],</span> <span class="n">bind</span><span class="o">=</span><span class="n">subject_dropdown</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;subject&quot;</span><span class="p">,</span> <span class="n">init</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;科目&quot;</span><span class="p">:</span> <span class="s2">&quot;国語&quot;</span><span class="p">}</span>
+<span class="n">subject_selection</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection</span><span class="p">(</span>
+    <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;single&quot;</span> <span class="p">,</span><span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;科目&quot;</span><span class="p">],</span> <span class="n">bind</span><span class="o">=</span><span class="n">subject_dropdown</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;subject&quot;</span><span class="p">,</span> <span class="n">init</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;科目&quot;</span><span class="p">:</span> <span class="s2">&quot;国語&quot;</span><span class="p">}</span>
 <span class="p">)</span>
 
 <span class="p">(</span>
@@ -15812,19 +16262,19 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[23]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-373f18e53034421e9adc42cad1c1b055"></div>
+<div id="altair-viz-82da50ab82f64cb7bae0c03ad89c4970"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-373f18e53034421e9adc42cad1c1b055") {
-      outputDiv = document.getElementById("altair-viz-373f18e53034421e9adc42cad1c1b055");
+    if (outputDiv.id !== "altair-viz-82da50ab82f64cb7bae0c03ad89c4970") {
+      outputDiv = document.getElementById("altair-viz-82da50ab82f64cb7bae0c03ad89c4970");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -15890,10 +16340,10 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">student_selection</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection_single</span><span class="p">(</span><span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;学生番号&quot;</span><span class="p">],</span> <span class="n">init</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;学生番号&quot;</span><span class="p">:</span> <span class="n">id_lst</span><span class="p">[</span><span class="mi">0</span><span class="p">]})</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">student_selection</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="s2">&quot;single&quot;</span> <span class="p">,</span><span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;学生番号&quot;</span><span class="p">],</span> <span class="n">init</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;学生番号&quot;</span><span class="p">:</span> <span class="n">id_lst</span><span class="p">[</span><span class="mi">0</span><span class="p">]})</span>
 
 <span class="p">(</span>
     <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">long_df</span><span class="p">)</span>
@@ -15935,19 +16385,19 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[24]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-ee7174aacd8e4dd28763a58dc5ca7a68"></div>
+<div id="altair-viz-184692c6b3f341beb9052bb49d0aa619"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-ee7174aacd8e4dd28763a58dc5ca7a68") {
-      outputDiv = document.getElementById("altair-viz-ee7174aacd8e4dd28763a58dc5ca7a68");
+    if (outputDiv.id !== "altair-viz-184692c6b3f341beb9052bb49d0aa619") {
+      outputDiv = document.getElementById("altair-viz-184692c6b3f341beb9052bb49d0aa619");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -16013,7 +16463,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">student_brush_selection</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="s2">&quot;interval&quot;</span><span class="p">,</span> <span class="n">encodings</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;x&quot;</span><span class="p">])</span>
@@ -16077,19 +16527,19 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[25]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-eb12306b05474193a0e38dbb63499c89"></div>
+<div id="altair-viz-4ae54c8fce9941aa88a6ee69256e5748"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-eb12306b05474193a0e38dbb63499c89") {
-      outputDiv = document.getElementById("altair-viz-eb12306b05474193a0e38dbb63499c89");
+    if (outputDiv.id !== "altair-viz-4ae54c8fce9941aa88a6ee69256e5748") {
+      outputDiv = document.getElementById("altair-viz-4ae54c8fce9941aa88a6ee69256e5748");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -16155,7 +16605,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">student_brush_selection</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="s2">&quot;interval&quot;</span><span class="p">,</span> <span class="n">encodings</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;x&quot;</span><span class="p">])</span>
@@ -16222,19 +16672,19 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[26]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-b6bd346b92e9400ba11d38b5cfac01d1"></div>
+<div id="altair-viz-7333f24f05bf4bd29c47aed75e558a0c"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-b6bd346b92e9400ba11d38b5cfac01d1") {
-      outputDiv = document.getElementById("altair-viz-b6bd346b92e9400ba11d38b5cfac01d1");
+    if (outputDiv.id !== "altair-viz-7333f24f05bf4bd29c47aed75e558a0c") {
+      outputDiv = document.getElementById("altair-viz-7333f24f05bf4bd29c47aed75e558a0c");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -16300,7 +16750,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">subject_mouse_selection</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection</span><span class="p">(</span>
@@ -16371,19 +16821,19 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[27]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-b541f90b4c704d41914ecf45d8a33d5c"></div>
+<div id="altair-viz-4bcfbdcfcc634241b658e725b4246340"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-b541f90b4c704d41914ecf45d8a33d5c") {
-      outputDiv = document.getElementById("altair-viz-b541f90b4c704d41914ecf45d8a33d5c");
+    if (outputDiv.id !== "altair-viz-4bcfbdcfcc634241b658e725b4246340") {
+      outputDiv = document.getElementById("altair-viz-4bcfbdcfcc634241b658e725b4246340");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -16453,7 +16903,7 @@ For information on how to plot larger datasets in Altair, see the documentation<
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 入力レコードの上限の変更</span>
@@ -16474,7 +16924,7 @@ For information on how to plot larger datasets in Altair, see the documentation<
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[28]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
@@ -16507,7 +16957,7 @@ For information on how to plot larger datasets in Altair, see the documentation<
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span>
@@ -16541,19 +16991,19 @@ For information on how to plot larger datasets in Altair, see the documentation<
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[29]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-e7ef8b7206784221bc4869f51cc299e5"></div>
+<div id="altair-viz-5fff29f5b81147dfa3070029e7e199a3"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-e7ef8b7206784221bc4869f51cc299e5") {
-      outputDiv = document.getElementById("altair-viz-e7ef8b7206784221bc4869f51cc299e5");
+    if (outputDiv.id !== "altair-viz-5fff29f5b81147dfa3070029e7e199a3") {
+      outputDiv = document.getElementById("altair-viz-5fff29f5b81147dfa3070029e7e199a3");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -16619,7 +17069,7 @@ For information on how to plot larger datasets in Altair, see the documentation<
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x_range</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">]</span>
@@ -16665,19 +17115,19 @@ For information on how to plot larger datasets in Altair, see the documentation<
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[30]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-9d67f5974f094f349fc2a9f326e3723f"></div>
+<div id="altair-viz-e249456f1758471286e27fb379d85223"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-9d67f5974f094f349fc2a9f326e3723f") {
-      outputDiv = document.getElementById("altair-viz-9d67f5974f094f349fc2a9f326e3723f");
+    if (outputDiv.id !== "altair-viz-e249456f1758471286e27fb379d85223") {
+      outputDiv = document.getElementById("altair-viz-e249456f1758471286e27fb379d85223");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -16743,7 +17193,7 @@ For information on how to plot larger datasets in Altair, see the documentation<
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">step</span> <span class="o">=</span> <span class="mi">50</span>
@@ -16795,19 +17245,19 @@ For information on how to plot larger datasets in Altair, see the documentation<
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[31]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-cd9eee6163fe4b9f8dcbb24b77ca4109"></div>
+<div id="altair-viz-328184f803164227a60475e36fc75b9b"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-cd9eee6163fe4b9f8dcbb24b77ca4109") {
-      outputDiv = document.getElementById("altair-viz-cd9eee6163fe4b9f8dcbb24b77ca4109");
+    if (outputDiv.id !== "altair-viz-328184f803164227a60475e36fc75b9b") {
+      outputDiv = document.getElementById("altair-viz-328184f803164227a60475e36fc75b9b");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
